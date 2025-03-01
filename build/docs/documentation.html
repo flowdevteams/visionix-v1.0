@@ -1,0 +1,1038 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--tailwind css-->
+  <link href="../css/output.css" rel="stylesheet">
+  <!--main custom css-->
+  <link href="../css/main.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../images/favicon/site.webmanifest">
+  <!--remix icon css-->
+  <link href="../remixicon/fonts/remixicon.css" rel="stylesheet">
+  <!--flowbite css-->
+  <link href="../css/flowbite.min.css" rel="stylesheet">
+  <!--aos css-->
+  <link href="../css/aos.css" rel="stylesheet">
+  <!-- Prism.js CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+
+
+
+</head>
+
+<style>
+
+</style>
+
+<body class="bg-light dark:bg-dark transition-colors ease-in-out delay-100 duration-500">
+
+  <!--loader-->
+  <div id="loader">
+    <svg class="h-20 w-20 animate-spin stroke-dark dark:stroke-light" viewBox="0 0 256 256">
+      <line x1="128" y1="32" x2="128" y2="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="195.9" y1="60.1" x2="173.3" y2="82.7" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="224" y1="128" x2="192" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="195.9" y1="195.9" x2="173.3" y2="173.3" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="24"></line>
+      <line x1="128" y1="224" x2="128" y2="192" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="60.1" y1="195.9" x2="82.7" y2="173.3" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="32" y1="128" x2="64" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="60.1" y1="60.1" x2="82.7" y2="82.7" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+    </svg>
+    <p class="md:text-5xl text-4xl font-semibold text-dark dark:text-light radio-canada-regular">Visio<span
+        class="text-primary dark:text-secondary">Nix</span> </p>
+  </div>
+  <!--end loader-->
+  <main id="content">
+
+    <!--header-->
+    <header
+      class="bg-light dark:bg-dark w-full  transition-colors ease-in-out delay-75 duration-300 shadow-large shadow-primary dark:shadow-secondary p-2 fixed top-0 z-50  bg-opacity-70 backdrop-blur">
+      <div class="mx-auto px-6 lg:px-8 ">
+        <div class="flex h-16 items-center justify-between  max-w-screen-xl mx-auto">
+          <div class="relative flex items-center gap-4">
+            <a href="../index.html">
+              <img src="../images/logo.png" alt="Logo" class="h-28 w-auto">
+          </a>
+
+          </div>
+          <div class="md:flex md:items-center md:gap-12 mx-auto">
+            <nav aria-label="Global" class="hidden xl:block">
+              <ul class="flex items-center gap-8 text-sm">
+
+                <!-- Instalation-->
+                <li class="relative group">
+                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 "
+                    href="#instalation">Instalation</a>
+                </li>
+                <!-- Customization-->
+                <li class="relative group">
+                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                    href="#custom">Customization</a>
+                </li>
+                <!-- Structure-->
+                <li class="relative group">
+                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                    href="#structure">Structures</a>
+                </li>
+                <!-- Structure-->
+                <li class="relative group">
+                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                    href="#credits">Credits</a>
+                </li>
+                <!-- Support -->
+                <li class="relative group">
+                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                    href="#support">Support</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!--download  button-->
+          <a class="hidden xl:block rounded-3xl bg-primary dark:bg-secondary md:px-8 py-2.5 px-4 text-md font-medium text-light dark:text-dark items-center gap-1 transition ease-in-out delay-150 hover:shadow-small hover:shadow-primary dark:shadow-secondary hover:text-light dark:hover:text-dark hover:bg-primary-hover dark:hover:bg-secondary-hover duration-300"
+            href="#">
+            Download
+            <i class="ri-arrow-down-line"></i>
+          </a>
+
+          <!-- Button to toggle between dark and light mode -->
+          <div class="flex items-center gap-4">
+            <div class="flex sm:gap-4">
+              <button onclick="toggleDarkMode()" class="p-2 text-primary dark:text-secondary">
+                <i id="dark-mode-icon" class="ri-sun-line text-2xl"></i>
+              </button>
+            </div>
+          </div>
+
+         <!-- Mobile Menu Toggle Button -->
+
+         <div class="block xl:hidden">
+          <button id="menu-button"
+              class="rounded  p-2 text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary"
+              type="button" data-drawer-target="drawer-body-scrolling" data-drawer-show="drawer-body-scrolling" data-drawer-body-scrolling="true" aria-controls="drawer-body-scrolling">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+          </button>
+      </div>
+
+      <!--Mobile Menu -->
+      <div>
+          <!-- drawer  -->
+          <div id="drawer-body-scrolling"
+              class="fixed top-0 left-0 z-40 h-screen  p-4 overflow-y-auto transition-transform -translate-x-full bg-light w-64 dark:bg-dark"
+              tabindex="-1" aria-labelledby="drawer-body-scrolling-label">
+              <h5  id="drawer-body-scrolling-label"
+                  class="text-base font-semibold text-primary uppercase dark:text-secondary">
+                  MENU
+              </h5>
+              <!-- Close Button for Mobile Menu -->
+              <button type="button" data-drawer-hide="drawer-body-scrolling" aria-controls="drawer-body-scrolling"
+                  class="text-dark bg-transparent hover:bg-light hover:text-dark rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-dark dark:hover:text-light">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close
+                      menu</span>
+              </button>
+              <div class="py-4 overflow-y-auto">
+                <ul class="space-y-2 font-medium">
+
+
+                  <!--Instalation-->
+                  <li>
+                    <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                      href="#instalation">
+                      <i
+                        class="ri-install-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                        class="ms-3">Instalation</span>
+                    </a>
+                  </li>
+                  <!--Customization-->
+                  <li>
+                    <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                      href="#custom">
+                      <i
+                        class="ri-custom-size text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                        class="ms-3">Customization</span>
+                    </a>
+                  </li>
+                  <!--Structure-->
+                  <li>
+                    <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                      href="#structure">
+                      <i
+                        class="ri-folders-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                        class="ms-3">Structure</span>
+                    </a>
+                  </li>
+                  <!--Credits-->
+                  <li>
+                    <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                      href="#credits">
+                      <i
+                        class="ri-attachment-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                        class="ms-3">Credits</span>
+                    </a>
+                  </li>
+                  <!--support-->
+                  <li>
+                    <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                      href="#support">
+                      <i
+                        class="ri-customer-service-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                        class="ms-3">Support</span>
+                    </a>
+                  </li>
+
+                  <hr class="mb-6">
+                  <!--donwload and docs link-->
+                  <li class="flex items-center gap-4  p-2">
+                    <div>
+                      <p class=" mb-6">
+                        <a href="#"
+                          class="inline-flex items-center font-medium text-primary dark:text-secondary  hover:underline">
+                          Download
+                          <i class="ri-arrow-down-line text-primary dark:text-secondary ms-3"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--end drawer-->
+          </div>
+          <!--end mobile menu-->
+        </div>
+      </div>
+      </div>
+      </div>
+      <!--scroll progress bar-->
+      <div id="scroll-progress" class="bg-primary dark:bg-secondary h-1 top-0 fixed left-0 z-50"></div>
+    </header>
+    <!--end header-->
+    <!--back to top button-->
+    <button id="back-to-top"
+      class="hidden fixed bottom-5 right-5 z-50 bg-primary dark:bg-secondary text-light dark:text-dark rounded-full w-16 h-16 p-2 transition ease-in-out delay-75 duration-200 hover:bg-primary-hover dark:hover:bg-secondary-hover hover:shadow-large dark:hover:shadow-secondary hover:shadow-primary hover:scale-105">
+      <i class="ri-arrow-up-line" style="font-size: 2rem"></i>
+    </button>
+    <!--instalation section-->
+    <section id="instalation" class="pt-32 px-6 ">
+      <div class="container mx-auto max-w-screen-xl ">
+        <div class=" ">
+          <!--Introduction-->
+          <div class="w-full md:w-1/2 lg:pr-16 mb-5">
+            <h2 class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canda-regular mb-4">
+              <i class="ri-customer-service-2-fill mr-2"></i>Intro<span class="text-dark dark:text-light">duction</span>
+            </h2>
+            <div class="rounded-xl  shadow-large shadow-primary dark:shadow-secondary text-dark dark:text-light p-4 ">
+              <h2 class="text-xl font-medium md:text-2xl text-dark dark:text-light radio-canda-regular mb-4">
+                What Is Visionix?
+              </h2>
+              <p class="text-lg font-medium md:text-xl text-dark dark:text-light pavanam-regular mb-4">
+                Visionix is a fully responsive and modern Tailwind CSS Landing Page Template, designed specifically for
+                agencies, startups, and businesses. It provides a clean, professional, and high-performance design that
+                ensures a seamless user experience on all devices.
+
+                Built with the latest <strong>Tailwind CSS v3.4.17</strong>, Visionix is optimized for fast performance and
+                easy
+                customization. The template includes pre-defined styles for typography, colors, icons, and animations,
+                allowing users to quickly adapt it to their branding needs.
+
+              </p>
+              <h2 class="text-xl font-medium md:text-2xl text-dark dark:text-light radio-canda-regular mb-4">
+                Key Features:
+              </h2>
+              <ul class="pavanam-regular font-semibold text-primary dark:text-secondary text-lg md:text-xl">
+                <li><i class="ri-checkbox-fill"></i> Agency-Focused Design <span
+                    class="text-dark dark:text-lightmuted">– Tailored for digital agencies and startups</span></li>
+                <li><i class="ri-checkbox-fill"></i> Dark Mode Support <span class="text-dark dark:text-lightmuted">–
+                    Easily switch between light and dark themes</span></li>
+                <li><i class="ri-checkbox-fill"></i> Simple Color Customization <span
+                    class="text-dark dark:text-lightmuted">– Modify primary and secondary colors via
+                    tailwind.config.js</span></li>
+                <li><i class="ri-checkbox-fill"></i> Fully Responsive & Mobile-Friendly <span
+                    class="text-dark dark:text-lightmuted">– Optimized for all screen sizes</span></li>
+                <li><i class="ri-checkbox-fill"></i> Remix Icon Integration <span
+                    class="text-dark dark:text-lightmuted">– High-quality, scalable icons for UI elements</span></li>
+                <li><i class="ri-checkbox-fill"></i> Smooth Animations with AOS <span
+                    class="text-dark dark:text-lightmuted">– Enhance user experience with scroll animations</span></li>
+                <li><i class="ri-checkbox-fill"></i> Google Fonts Support <span class="text-dark dark:text-lightmuted">–
+                    Easily update typography through main.css</span></li>
+
+              </ul>
+
+            </div>
+          </div>
+          <!--end introduction-->
+          <!--instalation-->
+          <div class="w-full md:w-1/2 lg:pr-16">
+            <h2 class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canda-regular">
+              <i class="ri-install-line mr-2"></i>Instalation <span class="text-dark dark:text-light">Steps</span>
+            </h2>
+            <div
+              class="rounded-xl  shadow-large shadow-primary dark:shadow-secondary text-dark dark:text-light p-4 mt-5">
+              <div class="flex items-center gap-4">
+                <div>
+                  <h3 class="text-base md:text-lg font-medium ">If you'd like to speed up development process with <a
+                      href="https://nodejs.org/en" class="text-primary dark:text-secondary">Node.js</a>, then follow
+                    these steps :</h3>
+                </div>
+              </div>
+
+              <ul class="mt-4 space-y-2 pavanam-regular">
+                <li>
+                  <div
+                    class="block h-full rounded-lg border border-dark dark:border-lightmuted p-4 hover:border-primary-hover dark:hover:border-secondary">
+                    <p class="font-semibold text-base md:text-lg">Install <a href="https://nodejs.org/en"
+                        class="underline text-primary dark:text-secondary">Node.js</a> if you don’t have it yet.</p>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="block h-full rounded-lg border border-dark dark:border-lightmuted p-4 hover:border-primary-hover dark:hover:border-secondary">
+                    <p class="font-semibold text-base md:text-lg">Run <strong
+                        class="underline text-primary dark:text-secondary"><i class="ri-terminal-line"></i> npx
+                        tailwindcss init </strong> before <strong class="underline text-primary dark:text-secondary"><i
+                          class="ri-terminal-line"></i> npm install
+                        -D tailwindcss postcss autoprefixer</strong> command</p>
+                    <p class="text-sm md:text-lg font-medium">if you haven't already installed tailwindcss previously.
+                      This will install the npm packages listed in the <strong
+                        class="underline text-primary dark:text-secondary"><i class="ri-file-line"></i>
+                        package.json</strong> file.
+                      You should now have the project files set up and all the npm packages installed.</p>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="block h-full rounded-lg border border-dark dark:border-lightmuted p-4 hover:border-primary-hover dark:hover:border-secondary">
+                    <p class="font-semibold text-base md:text-lg">if you already installed tailwindcss previously, Run
+                      <strong class="underline text-primary dark:text-secondary"><i class="ri-terminal-line"></i> npm
+                        install
+                        -D tailwindcss postcss autoprefixer</strong> then <strong
+                        class="underline text-primary dark:text-secondary"><i class="ri-terminal-line"></i> npm run
+                        dev</strong> to start the development server with hot-reloading. This command allows you to
+                      preview changes in real-time while customizing your Visionix template before preparing it for
+                      production.
+                    </p>
+
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--end instalation-->
+        </div>
+      </div>
+
+      <!--quick instalation-->
+      <div class="container mx-auto  max-w-screen-xl mt-5">
+        <div class=" ">
+          <div class="w-full md:w-1/2 lg:pr-16">
+            <h2 class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canda-regular">
+              <i class="ri-folder-video-fill mr-2"></i>Quick  <span
+                class="text-dark dark:text-light">Installation</span>
+            </h2>
+            <div
+              class="rounded-xl  shadow-large shadow-primary dark:shadow-secondary text-dark dark:text-light p-4 mt-5">
+              <ul class="mt-4 space-y-2 pavanam-regular">
+              
+
+                <li>
+                  <div class="block p-2">
+                    <p class="font-semibold text-base md:text-lg">Installing npm packages ( Terminal command: <strong
+                        class="underline text-primary dark:text-secondary"><i class="ri-terminal-line"></i> npm install
+                        -D tailwindcss postcss autoprefixer</strong> )
+                    </p>
+                    <p class="font-semibold text-base md:text-lg">Build for Development( Terminal command: <strong
+                        class="underline text-primary dark:text-secondary"><i class="ri-terminal-line"></i> npm run
+                        dev</strong> )
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end quick instalation-->
+    </section>
+    <!--end instalation section-->
+
+    <!--customization section-->
+    <section id="custom" class="my-[4%] px-6 ">
+      <div class="container mx-auto max-w-screen-xl ">
+        <div class=" ">
+          <div class="w-full md:w-1/2 lg:pr-16 ">
+            <h2 class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canda-regular">
+              <i class="ri-custom-size mr-2"></i>Customi<span class="text-dark dark:text-light">zation</span>
+            </h2>
+            <div
+              class="rounded-xl  shadow-large shadow-primary dark:shadow-secondary text-dark dark:text-light p-4 mt-5">
+              <div>
+                <ul class="mt-4 space-y-2 pavanam-regular">
+                  <li>
+                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold "><i
+                        class="ri-arrow-right-fill text-primary dark:text-secondary"></i> How to customize colors in
+                      Visionix?</h3>
+                    <p class="text-sm md:text-lg font-medium">Visionix makes it easy to customize colors using
+                      Tailwind CSS. Instead of manually changing colors throughout the template, you can modify the
+                      primary and secondary colors directly in the <code>tailwind.config.js</code> file.
+                      Simply update the values for <strong class="text-primary">"primary"</strong> and <strong
+                        class="text-secondary">"secondary"</strong> in the theme extension, and all elements using these
+                      colors will automatically reflect the changes.
+                      This allows you to adjust the theme’s color scheme with just one modification.
+                      For more details on customizing colors, refer to the Tailwind CSS documentation: <a
+                        href="https://tailwindcss.com/docs/customizing-colors"
+                        class="text-primary dark:text-secondary hover:underline">Customizing Colors</a>.</p>
+                  </li>
+                  <li>
+                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold mt-6"><i
+                        class="ri-arrow-right-fill text-primary dark:text-secondary"></i> How to change the font family
+                      in Visionix?</h3>
+                    <p class="text-sm md:text-lg font-medium">Visionix makes it easy to customize colors using
+                      First, open the <code class="text-primary dark:text-secondary text-base">_main.css</code> file
+                      (located in
+                      `build/css/main.css`) and import your Google Font: <code
+                        class="text-primary dark:text-secondary text-base">
+                       @import url('https://fonts.google.com/')</code>
+                      <br>
+                      Next, create a custom class inside `main.css` to define the font family:
+                      <br>
+                      <code
+                        class="text-primary dark:text-secondary text-base">.poppins-regular { font-family: "Poppins", sans-serif; font-weight: 400; font-style: normal; }</code>
+                      <br>
+                      Finally, apply the font using the class in your HTML:
+                      <br>
+                      <code
+                        class="text-primary dark:text-secondary p-1 rounded bg-lightmuted dark:bg-darkmuted text-base">&lt;p class="poppins-regular"&gt;This text uses Poppins font.&lt;/p&gt;</code>
+                    </p>
+                  </li>
+                  <li>
+                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold mt-6">
+                      <i class="ri-arrow-right-fill text-primary dark:text-secondary"></i> How to set up Formspree in Visionix?
+                    </h3>
+                    <p class="text-sm md:text-lg font-medium">
+                      Visionix uses <a href="https://formspree.io/" class="text-primary dark:text-secondary hover:underline">Formspree</a> to handle contact form submissions easily without a backend.  
+                      To set it up, follow these steps:
+                      <br>
+                      1. Go to <a href="https://formspree.io/" class="text-primary dark:text-secondary hover:underline">Formspree</a> and sign up (if you haven't already).
+                      <br>
+                      2. Create a new form and copy the unique Formspree endpoint URL.
+                      <br>
+                      3. Open the <code class="text-primary dark:text-secondary text-base">contact.html</code> file in Visionix.
+                      <br>
+                      4. Replace the current form's <code class="text-primary dark:text-secondary text-base">action</code> attribute with your Formspree endpoint.
+                     <br>
+                      5. Save the file, and your form is ready to receive submissions via email.
+                    </p>
+                  </li>
+                  
+                  <li>
+                    <h3 class="text-lg md:text-xl lg:text-2xl font-semibold mt-6"><i
+                        class="ri-arrow-right-fill text-primary dark:text-secondary"></i> How to change icons in
+                      Visionix?</h3>
+                    <p class="text-sm md:text-lg font-medium ">
+                      Visionix uses <a href="https://remixicon.com/"
+                        class="text-primary dark:text-secondary font-semibold">Remix Icon</a>, a free and open-source
+                      icon library. Follow these steps to change icons in your project : <br>
+                      Find Your Desired Icon
+                      Visit <a href="https://remixicon.com/"
+                        class="text-primary dark:text-secondary font-semibold">Remix Icon</a> and search for the icon
+                      you want to use. Each icon has a unique class name <strong>(e.g., `ri-home-line` for a home
+                        icon)</strong>. <br>
+
+
+                      Replace the Icon Class in Your HTML
+                      Locate the icon in your HTML file and replace the class with your chosen icon.
+                      Example:
+
+                      <code
+                        class="text-primary dark:text-secondary text-base">&lt;i class="ri-edit-box-fill"&gt;&lt;/i&gt;</code>
+                      → Change to
+
+                      <code
+                        class="text-primary dark:text-secondary text-base">&lt;i class="ri-home-line"&gt;&lt;/i&gt;</code><br>
+
+
+                      Customize Icon Size and Color
+                      You can modify the icon size and color using Tailwind CSS classes:
+                      - Size: `<i class="ri-home-line text-2xl"></i>` <strong>(Change `text-2xl` to other sizes like
+                        `text-lg`,
+                        `text-4xl`, etc.)</strong>
+                      - Color: `<i class="ri-home-line text-primary dark:text-secondary"></i>`<br>
+
+
+                      Using Icons Inside Buttons and Links
+                      To use an icon inside a button or link, simply wrap it inside:
+
+                      <code class="text-primary dark:text-secondary text-base">&lt;a href="#" class="flex items-center space-x-2"&gt;  
+                         &lt;i class="ri-shopping-cart-2-fill text-lg"&gt;&lt;/i&gt;  
+                         &lt;span&gt;Buy Now&lt;/span&gt;  
+                       &lt;/a&gt;</code>
+
+                      That's it! You can now easily replace and customize icons in Visionix.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end customization section-->
+
+    <!--structures section-->
+    <section id="structure" class="my-[4%] px-6 ">
+      <div class="container mx-auto max-w-screen-xl ">
+        <div>
+
+          <div class="w-full md:w-1/2 lg:pr-16 ">
+            <h2 class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canda-regular">
+              <i class="ri-folders-line mr-2"></i>Struc<span class="text-dark dark:text-light">tures</span>
+            </h2>
+            <!--folder structure-->
+            <div
+              class="rounded-xl  shadow-large shadow-primary dark:shadow-secondary text-dark dark:text-light p-4 mt-5 mb-4">
+              <h2 class="text-2xl font-medium md:text-4xl text-dark dark:text-light radio-canda-regular mb-4">
+                Folder and File Structure
+              </h2>
+              <h3 class="text-lg md:text-xl lg:text-2xl font-semibold mb-5">Visionix V1.0</h3>
+              <ul class="">
+
+                <li>
+                  <div class="flex items-center gap-2 font-bold text-primary dark:text-secondary">
+                    <i class="ri-folder-2-fill"></i> VISIONIX-MAIN
+                  </div>
+                  <ul class="ml-6 mt-2 space-y-8">
+                    <li>
+                      <div class="flex items-center gap-2 text-primary dark:text-secondary">
+                        <i class="ri-folder-2-fill"></i> build
+                      </div>
+                      <ul class="ml-6 mt-1 space-y-1">
+                        <li class="block text-gray-600">
+                          <div class="flex items-center gap-2 text-primary dark:text-secondary">
+                            <i class="ri-folder-2-fill"></i> css
+                          </div>
+                          <ul class="px-4 py-2">
+
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+
+                            </li>
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <i class="ri-hashtag text-sky-500"></i> main.css
+                            </li>
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <i class="ri-hashtag text-sky-500"></i> output.css
+                            </li>
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <i class="ri-hashtag text-sky-500"></i> flowbite.min.css
+                            </li>
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <i class="ri-hashtag text-sky-500"></i> aos.css
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="block text-gray-600">
+                          <div class="flex items-center gap-2 text-primary dark:text-secondary">
+                            <i class="ri-folder-2-fill"></i> remixicon
+                          </div>
+                          <ul class="px-4 py-2">
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <p>// icons and fonts here</p>
+                            </li>
+
+                          </ul>
+                        </li>
+                        <li class="block text-gray-600">
+                          <div class="flex items-center gap-2 text-primary dark:text-secondary">
+                            <i class="ri-folder-2-fill"></i> images
+                          </div>
+                          <ul class="px-4 py-2">
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <p>// all images here</p>
+                            </li>
+
+                          </ul>
+                        </li>
+                        <li class="block text-gray-600">
+                          <div class="flex items-center gap-2 text-primary dark:text-secondary">
+                            <i class="ri-folder-2-fill"></i> js
+                          </div>
+                          <ul class="px-4 py-2">
+
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <i class="ri-javascript-fill text-yellow-500"></i> main.js
+                            </li>
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <i class="ri-javascript-fill text-yellow-500"></i> flowbite.min.js
+                            </li>
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <i class="ri-javascript-fill text-yellow-500"></i> aos.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <div class="flex items-center gap-2 text-primary dark:text-secondary">
+                            <i class="ri-folder-2-fill"></i> docs
+                          </div>
+                          <ul class="px-4 py-2">
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <i class="ri-html5-fill text-orange-500"></i> documentation.html
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <div class="flex items-center gap-2 text-primary dark:text-secondary">
+                            <i class="ri-folder-2-fill"></i> src
+                          </div>
+                          <ul class="px-4 py-2">
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <i class="ri-hashtag text-sky-500"></i> input.css
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li>
+                          <div class="flex items-center gap-2 text-primary dark:text-secondary">
+                            <i class="ri-folder-2-fill"></i> themes
+                          </div>
+                          <ul class="ml-6 mt-1 space-y-1">
+                            <li class="block  text-gray-600">
+                              <div class="flex items-center gap-2 text-primary dark:text-secondary">
+                                <i class="ri-folder-2-fill"></i> agency
+                              </div>
+                              <ul class="px-4 py-2">
+                                <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                                  <i class="ri-html5-fill text-orange-500"></i> home.html
+                                </li>
+                                <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                                  <i class="ri-html5-fill text-orange-500"></i> about.html
+                                </li>
+                                <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                                  <i class="ri-html5-fill text-orange-500"></i> services.html
+                                </li>
+                                <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                                  <i class="ri-html5-fill text-orange-500"></i> blog.html
+                                </li>
+                                <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                                  <i class="ri-html5-fill text-orange-500"></i> portfolio.html
+                                </li>
+                                <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                                  <i class="ri-html5-fill text-orange-500"></i> contact.html
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <div class="flex items-center gap-2 text-primary dark:text-secondary">
+                                <i class="ri-folder-2-fill"></i> auth
+                              </div>        
+                                  <ul class="px-4 py-2">
+                                    <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                                      <i class="ri-html5-fill text-orange-500"></i> forgotpasssword.html
+                                    </li>
+                                    <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                                      <i class="ri-html5-fill text-orange-500"></i> resetpassword.html
+                                    </li>
+                                    <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                                      <i class="ri-html5-fill text-orange-500"></i> sigin.html
+                                    </li>
+                                    <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                                      <i class="ri-html5-fill text-orange-500"></i> signup.html
+                                    </li>
+                                  </ul>
+                            </li>
+                            <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                              <i class="ri-html5-fill text-orange-500"></i> index.html
+                            </li>
+                          </ul>
+                        </li>
+
+
+                        <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                          <i class="ri-article-fill text-blue-600"></i> README.md
+                        </li>
+                        <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                          <i class="ri-brackets-fill text-yellow-400"></i> package-lock.json
+                        </li>
+                        <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                          <i class="ri-brackets-fill text-yellow-400"></i> package.json
+                        </li>
+                        <li class="flex items-center gap-2 text-dark dark:text-lightmuted">
+                          <i class="ri-javascript-fill text-yellow-500"></i> tailwind.config.js
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+            </div>
+            <!--end folder structure-->
+
+            <!--html structure-->
+            <div
+              class="rounded-xl shadow-large shadow-primary dark:shadow-secondary text-dark dark:text-light p-4 bg-light dark:bg-dark relative mt-8 mb-4">
+              <h2 class="text-2xl font-medium md:text-4xl text-dark dark:text-light radio-canda-regular mb-4">
+                HTML Structure
+              </h2>
+              <pre><code id="codeBlock" class="language-html ">
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;My Page&lt;/title&gt;
+                    
+                    &lt;!-- Tailwind CSS --&gt;
+                    &lt;link rel="stylesheet" href="../../css/output.css"&gt;
+                    
+                    &lt;!-- Main Custom CSS --&gt;
+                    &lt;link rel="stylesheet" href="../../css/main.css"&gt;
+                    
+                   
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                &lt;!-- Loader --&gt;
+                    &lt;div id='loader'&gt;
+                    &lt;/div&gt;
+                    &lt;!--End Loader --&gt;
+
+                    &lt;!-- Main Content --&gt;
+                    &lt;main id="content"&gt;
+
+                    &lt;!-- Navbar --&gt;
+                        &lt;header&gt;
+                           &lt;div class="-----"&gt;
+                           -----------
+                           -----------
+                           &lt;/div&gt;
+                        &lt;/header&gt;
+                        &lt;!--End Navbar --&gt;
+
+                        &lt;!-- Back to top button --&gt;
+                         &lt;button id="-----"&gt;
+                         &lt;/button&gt;
+                        &lt;!--End Back to top button --&gt;
+
+                        &lt;!-- Hero Section --&gt;
+                         &lt;section class="-----"&gt;
+                           &lt;div class="-----"&gt;
+                           -----------
+                           -----------
+                           &lt;/div&gt;
+                        &lt;/section&gt;
+                        &lt;!--End Hero Section --&gt;
+
+                        &lt;!-- Footer --&gt;
+                        &lt;footer class="-----"&gt;
+                          &lt;div class="-----"&gt;
+                          -----------
+                          -----------
+                          &lt;/div&gt;
+                        &lt;/footer&gt;
+                        &lt;!--End Footer --&gt;
+
+                    &lt;/main&gt;
+                    &lt;!--End Main Content --&gt;
+
+                  
+                    &lt;!-- AOS JS --&gt;
+                    &lt;script src="https://unpkg.com/aos@next/dist/aos.js"&gt;&lt;/script&gt;
+                    
+                    &lt;!-- Main JS --&gt;
+                    &lt;script src="../../js/main.js"&gt;&lt;/script&gt;
+
+                &lt;/body&gt;
+                &lt;/html&gt;
+                
+                
+                </code></pre>
+            </div>
+            <!--end html structure-->
+
+            <!--css and javascript explanation-->
+            <div
+              class="rounded-xl shadow-large shadow-primary dark:shadow-secondary text-dark dark:text-light p-4 bg-light dark:bg-dark relative mt-8 mb-4">
+              <h2 class="text-2xl font-medium md:text-4xl text-dark dark:text-light radio-canda-regular mb-4">
+                File Explanation
+              </h2>
+              <div>
+                <h2 class="text-2xl font-medium md:text-4xl text-dark dark:text-light radio-canda-regular mb-4">
+                  <i class="ri-css3-fill"></i> C<span class="text-primary dark:text-secondary">SS</span>
+                </h2>
+                <p class="text-lg font-medium md:text-2xl text-darkmuted dark:text-lightmuted mb-5">
+                  Files are <span class="text-primary dark:text-secondary">explained below</span> :
+                </p>
+                <div class="overflow-x-auto rounded-lg border pavanam-regular text-dark dark:text-lightmuted">
+                  <table class="min-w-full divide-y-2 divide-darkmuted dark:divide-lightmuted text-sm">
+                    <thead class="text-left border-b-2 border-lightmuted text-base md:text-lg font-bold">
+                      <tr>
+                        <th class="whitespace-nowrap px-4 py-2  ">File</th>
+                        <th class="whitespace-nowrap px-4 py-2  ">Description</th>
+
+                      </tr>
+                    </thead>
+
+                    <tbody class="divide-y divide-darkmuted dark:divide-lightmuted text-base md:text-lg font-semibold">
+                      <tr>
+                        <td class="whitespace-nowrap px-4 py-2  ">main.css</td>
+                        <td class="whitespace-nowrap px-4 py-2 text-primary dark:text-secondary">The core custom CSS
+                          file used across all pages.</td>
+
+                      </tr>
+
+                      <tr>
+                        <td class="whitespace-nowrap px-4 py-2  ">input.css</td>
+                        <td class="whitespace-nowrap px-4 py-2 text-primary dark:text-secondary">Tailwind's default
+                          files, handling utility classes generation.</td>
+
+                      </tr>
+
+
+                      <tr>
+                        <td class="whitespace-nowrap px-4 py-2  ">output.css</td>
+                        <td class="whitespace-nowrap px-4 py-2 text-primary dark:text-secondary">Tailwind's default
+                          files, handling utility classes generation.</td>
+
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap px-4 py-2">aos.css</td>
+                        <td class="whitespace-nowrap px-4 py-2 text-primary dark:text-secondary">CSS file for AOS
+                          (Animate On Scroll) library, handling scroll-based animations.</td>
+                      </tr>
+
+                      <tr>
+                        <td class="whitespace-nowrap px-4 py-2">flowbite.min.css</td>
+                        <td class="whitespace-nowrap px-4 py-2 text-primary dark:text-secondary">Minified CSS file for
+                          Flowbite, used for Tailwind-based UI components.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h2 class="text-2xl font-medium md:text-4xl text-dark dark:text-light radio-canda-regular mt-8 mb-4">
+                  <i class="ri-javascript-line"></i> Java<span class="text-primary dark:text-secondary">script</span>
+                </h2>
+                <p class="text-lg font-medium md:text-2xl text-darkmuted dark:text-lightmuted mb-5">
+                  Files are <span class="text-primary dark:text-secondary">explained below</span> :
+                </p>
+                <div class="overflow-x-auto rounded-lg border pavanam-regular text-dark dark:text-lightmuted">
+                  <table class="min-w-full divide-y-2 divide-darkmuted dark:divide-lightmuted text-sm">
+                    <thead class="text-left border-b-2 border-lightmuted text-base md:text-lg font-bold">
+                      <tr>
+                        <th class="whitespace-nowrap px-4 py-2  ">File</th>
+                        <th class="whitespace-nowrap px-4 py-2  ">Description</th>
+
+                      </tr>
+                    </thead>
+
+                    <tbody class="divide-y divide-darkmuted dark:divide-lightmuted text-base md:text-lg font-semibold">
+
+
+                      <tr>
+                        <td class="whitespace-nowrap px-4 py-2">main.js</td>
+                        <td class="whitespace-nowrap px-4 py-2 text-primary dark:text-secondary ">
+                          Handles custom JavaScript functionalities, including animations, event listeners, smooth
+                          scrolling, and UI interactions for Visionix.
+                        </td>
+
+
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap px-4 py-2">aos.js</td>
+                        <td class="whitespace-nowrap px-4 py-2 text-primary dark:text-secondary">
+                          JavaScript file for AOS (Animate On Scroll), enabling smooth scroll-based animations on
+                          elements.
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="whitespace-nowrap px-4 py-2">flowbite.min.js</td>
+                        <td class="whitespace-nowrap px-4 py-2 text-primary dark:text-secondary">
+                          Minified JavaScript file for Flowbite, providing interactive Tailwind-based UI components.
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!--end css and javascript explanation-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end structures section-->
+
+    <!--credits section-->
+    <section id="credits" class="my-[4%] px-6 ">
+      <div class="container mx-auto max-w-screen-xl ">
+        <div class=" ">
+          <div class="w-full md:w-1/2 lg:pr-16 ">
+            <h2 class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canda-regular mb-4">
+              <i class="ri-file-settings-fill mr-2"></i>Cre<span class="text-dark dark:text-light">dits</span>
+            </h2>
+            <div class="rounded-xl  shadow-large shadow-primary dark:shadow-secondary text-dark dark:text-light p-4 ">
+              <h2 class="text-xl font-medium md:text-2xl text-dark dark:text-light radio-canda-regular mb-4">
+                Credits & Official Documentation
+              </h2>
+              <p class="text-lg font-medium md:text-xl text-dark dark:text-light pavanam-regular mb-4">
+                We've used the following resources as listed. These are some awesome creation and we are thankful to the
+                community.
+              </p>
+              <div
+                class="flex flex-col pavanam-regular text-dark dark:text-lightmuted text-lg md:text-xl font-semibold">
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://www.npmjs.com/"
+                    class="text-primary dark:text-secondary hover:underline">Npm Js</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://nodejs.org/en"
+                    class="text-primary dark:text-secondary hover:underline">Node Js</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://tailwindcss.com/"
+                    class="text-primary dark:text-secondary hover:underline">Tailwind css</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://flowbite.com/"
+                    class="text-primary dark:text-secondary hover:underline">Flowbite</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://michalsnik.github.io/aos/"
+                    class="text-primary dark:text-secondary hover:underline">Animate On Scroll</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://alpinejs.dev/"
+                    class="text-primary dark:text-secondary hover:underline">Alpine js</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://keen-slider.io/"
+                    class="text-primary dark:text-secondary hover:underline">Keen Slider</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://remixicon.com/"
+                    class="text-primary dark:text-secondary hover:underline">Remix Icon</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://fonts.google.com/"
+                    class="text-primary dark:text-secondary hover:underline">Google Fonts</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://www.freepik.com/"
+                    class="text-primary dark:text-secondary hover:underline">Freepik</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://www.pexels.com/id-id/"
+                    class="text-primary dark:text-secondary hover:underline">Pexels</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://cssgradient.io/"
+                    class="text-primary dark:text-secondary hover:underline">Css Gradient</a>
+                </div>
+                <div>
+                  <i class="ri-arrow-right-line mr-2"></i><a href="https://favicon.io/"
+                    class="text-primary dark:text-secondary hover:underline">Favicon</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end credits section-->
+
+    <!--support section-->
+    <section id="support" class="my-[4%] px-6 ">
+      <div class="container mx-auto max-w-screen-xl ">
+        <div class=" ">
+          <div class="w-full md:w-1/2 lg:pr-16 ">
+            <h2 class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canda-regular mb-4">
+              <i class="ri-customer-service-2-fill mr-2"></i>Support<span class="text-dark dark:text-light"> &
+                Changelog</span>
+            </h2>
+            <div class="rounded-xl  shadow-large shadow-primary dark:shadow-secondary text-dark dark:text-light p-4 ">
+              <h2 class="text-xl font-medium md:text-2xl text-dark dark:text-light radio-canda-regular mb-4">
+                Thank-you note
+              </h2>
+              <p class="text-lg font-medium md:text-xl text-dark dark:text-light pavanam-regular mb-4">
+                Once again thank you for your purchase. I'll be happy to answer the the questions you have related to
+                the theme. In case if you have any suggestion or feature, request please feel free to contact me, I'll
+                try to implement it and will release as part of future updates.
+
+                If you have any questions that are beyond the scope of this documentation, please feel free to email or
+                contact us via my page.
+
+                Stay awesome
+
+                <span class="block text-primary dark:text-secondary mt-5">- Flowdev Teams</span>
+              </p>
+              <h2 class="text-xl font-medium md:text-2xl text-dark dark:text-light radio-canda-regular mb-4">
+                Change Log
+              </h2>
+              <p class="text-lg font-bold md:text-xl text-primary dark:text-secondary pavanam-regular mb-4">
+                Version 1.0
+
+                <span class="block text-dark dark:text-lightmuted mt-3"> <i class="ri-arrow-right-line mr-2"></i>Initial
+                  Release</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end support section-->
+
+    <!--footer-->
+    <footer class="shadow-extra-large shadow-primary dark:shadow-secondary">
+      <div class="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
+
+        <p class="text-lg md:text-xl font-semibold text-gray-600 dark:text-gray-300 mx-auto pavanam-regular">© 
+          2025. Designed By <span class="text-primary dark:text-secondary">Flowdev Teams.</span></p>
+
+      </div>
+    </footer>
+    <!--end footer-->
+
+
+
+  </main>
+  <!--main custom js-->
+  <script src="../js/main.js"></script>
+  <!--flowbite js-->
+  <script src="../js/flowbite.min.js"></script>
+  <!--aos js-->
+  <script src="../js/aos.js"></script>
+  <!-- Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+
+
+  <script>
+    // aos scirpt init
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

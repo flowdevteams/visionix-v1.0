@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--tailwind css-->
+  <link href="../../css/output.css" rel="stylesheet">
+  <!--main custom css-->
+  <link href="../../css/main.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../../images/favicon/site.webmanifest">
+  <!--remix icon css-->
+  <link href="../../remixicon/fonts/remixicon.css" rel="stylesheet">
+  <!--flowbite css-->
+  <link href="../../css/flowbite.min.css" rel="stylesheet">
+  <!--aos css-->
+  <link href="../../css/aos.css" rel="stylesheet">
+
+     
+
+</head>
+
+<style>
+
+</style>
+
+<body class="bg-light dark:bg-dark transition-colors ease-in-out delay-100 duration-500">
+
+    <!--loader-->
+    <div id="loader">
+        <svg class="h-20 w-20 animate-spin stroke-dark dark:stroke-light" viewBox="0 0 256 256">
+            <line x1="128" y1="32" x2="128" y2="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+            </line>
+            <line x1="195.9" y1="60.1" x2="173.3" y2="82.7" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="24">
+            </line>
+            <line x1="224" y1="128" x2="192" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+            </line>
+            <line x1="195.9" y1="195.9" x2="173.3" y2="173.3" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="24"></line>
+            <line x1="128" y1="224" x2="128" y2="192" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+            </line>
+            <line x1="60.1" y1="195.9" x2="82.7" y2="173.3" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="24">
+            </line>
+            <line x1="32" y1="128" x2="64" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+            </line>
+            <line x1="60.1" y1="60.1" x2="82.7" y2="82.7" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="24">
+            </line>
+        </svg>
+        <p class="md:text-5xl text-4xl font-semibold text-dark dark:text-light radio-canada-regular">Visio<span
+                class="text-primary dark:text-secondary">Nix</span> </p>
+    </div>
+    <!--end loader-->
+    <main id="content">
+          <!--header-->
+          <header
+          class="bg-light dark:bg-dark w-full transition-colors ease-in-out delay-75 duration-300 shadow-large shadow-primary dark:shadow-secondary p-2 fixed top-0 z-50  bg-opacity-70 backdrop-blur">
+          <div class="mx-auto  px-6 lg:px-8">
+              <div class="flex h-16 items-center justify-between max-w-screen-xl mx-auto">
+                  <div class="relative">
+                   
+                              <a href="../../index.html">
+                                  <img src="../../images/logo.png" alt="Logo" class="h-32 w-auto">
+                              </a>
+                  </div>
+                  <div class="md:flex md:items-center md:gap-12 mx-auto">
+                      <nav aria-label="Global" class="hidden xl:block ms-20">
+                          <ul class="flex items-center gap-8 text-sm">
+                              <!-- Home -->
+                              <li class="relative group">
+                                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 "
+                                      href="home.html">Home</a>
+                              </li>
+                              <!-- About-->
+                              <li class="relative group">
+                                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                                      href="about.html">About</a>
+                              </li>
+                              <!-- Services-->
+                              <li class="relative group">
+                                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                                      href="services.html">Services</a>
+                              </li>
+                              <!-- Portfolio-->
+                              <li class="relative group">
+                                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                                      href="portfolio.html">Portfolio</a>
+                              </li>
+                              <!-- Blog-->
+                              <li class="relative group">
+                                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                                      href="blog.html">Blog</a>
+                              </li>
+                              <!-- Contact-->
+                              <li class="relative group">
+                                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                                      href="contact.html">Contact</a>
+                              </li>
+
+                          </ul>
+                      </nav>
+                  </div>
+                  <!--download and docs button-->
+                  <div class="hidden xl:block">
+                      <div class="sm:gap-4 flex">
+                          <a class="rounded-3xl bg-primary dark:bg-secondary md:px-8 py-2.5 px-4 text-md font-medium text-light dark:text-dark flex items-center gap-1 transition ease-in-out delay-150 hover:shadow-small hover:shadow-primary dark:shadow-secondary hover:text-light dark:hover:text-dark hover:bg-primary-hover dark:hover:bg-secondary-hover duration-300"
+                              href="#">
+                              Download
+                              <i class="ri-arrow-down-line"></i>
+                          </a>
+                          <a class="rounded-3xl bg-primary dark:bg-secondary md:px-8 py-2.5 px-4 text-md font-medium text-light dark:text-dark flex items-center gap-1 transition ease-in-out delay-150 hover:shadow-small hover:shadow-primary dark:shadow-secondary hover:text-light dark:hover:text-dark hover:bg-primary-hover dark:hover:bg-secondary-hover duration-300"
+                              href="../../docs/documentation.html">
+                              Docs
+                              <i class="ri-article-fill"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <!-- Button to toggle between dark and light mode -->
+                  <div class="flex items-center gap-4 ms-4">
+                      <div class="flex sm:gap-4">
+                          <button onclick="toggleDarkMode()" class="p-2 text-primary dark:text-secondary">
+                              <i id="dark-mode-icon" class="ri-sun-line text-2xl"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <!-- Mobile Menu Toggle Button -->
+
+                  <div class="block xl:hidden">
+                      <button id="menu-button"
+                          class="rounded  p-2 text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary"
+                          type="button" data-drawer-target="drawer-body-scrolling" data-drawer-show="drawer-body-scrolling" data-drawer-body-scrolling="true" aria-controls="drawer-body-scrolling">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                              stroke="currentColor" stroke-width="2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                      </button>
+                  </div>
+
+                  <!--Mobile Menu -->
+                  <div>
+                      <!-- drawer  -->
+                      <div id="drawer-body-scrolling"
+                          class="fixed top-0 left-0 z-40 h-screen  p-4 overflow-y-auto transition-transform -translate-x-full bg-light w-64 dark:bg-dark"
+                          tabindex="-1" aria-labelledby="drawer-body-scrolling-label">
+                          <h5  id="drawer-body-scrolling-label"
+                              class="text-base font-semibold text-primary uppercase dark:text-secondary">
+                              MENU
+                          </h5>
+                          <!-- Close Button for Mobile Menu -->
+                          <button type="button" data-drawer-hide="drawer-body-scrolling" aria-controls="drawer-body-scrolling"
+                              class="text-dark bg-transparent hover:bg-light hover:text-dark rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-dark dark:hover:text-light">
+                              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                  viewBox="0 0 14 14">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                              </svg>
+                              <span class="sr-only">Close
+                                  menu</span>
+                          </button>
+                          <div class="py-4 overflow-y-auto">
+                              <ul class="space-y-2 font-medium">
+
+
+                                  <!--home-->
+                                  <li>
+                                      <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                          href="home.html">
+                                          <i
+                                              class="ri-home-2-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                              class="ms-3">Home</span>
+                                      </a>
+                                  </li>
+                                  <!--about-->
+                                  <li>
+                                      <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                          href="about.html">
+                                          <i
+                                              class="ri-account-pin-box-line text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                              class="ms-3">About</span>
+                                      </a>
+                                  </li>
+                                  <!--services-->
+                                  <li>
+                                      <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                          href="services.html">
+                                          <i
+                                              class="ri-customer-service-2-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                              class="ms-3">Services</span>
+                                      </a>
+                                  </li>
+                                  <!--portfolio-->
+                                  <li>
+                                      <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                          href="portfolio.html">
+                                          <i
+                                              class="ri-map-pin-user-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                              class="ms-3">Portfolio</span>
+                                      </a>
+                                  </li>
+                                  <!--blog-->
+                                  <li>
+                                      <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                          href="blog.html">
+                                          <i
+                                              class="ri-news-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                              class="ms-3">Blog</span>
+                                      </a>
+                                  </li>
+                                  <!--contact-->
+                                  <li>
+                                      <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                          href="contact.html">
+                                          <i
+                                              class="ri-phone-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                              class="ms-3">Contact</span>
+                                      </a>
+                                  </li>
+
+                                  <hr class="mb-6">
+                                  <!--donwload and docs link-->
+                                  <li class="flex items-center gap-4  p-2">
+                                      <div class="block xl:hidden ">
+
+                                          <p class=" mb-6">
+                                              <a href="#"
+                                                  class="inline-flex items-center font-medium text-primary dark:text-secondary  hover:underline">
+                                                  Download
+                                                  <i
+                                                      class="ri-arrow-down-line text-primary dark:text-secondary ms-3"></i>
+                                              </a>
+                                          </p>
+                                          <p class="mb-6">
+                                              <a href="../../docs/documentation.html"
+                                                  class="inline-flex items-center font-medium text-primary dark:text-secondary hover:underline">
+                                                  Docs
+                                                  <i
+                                                      class="ri-article-fill text-primary dark:text-secondary ms-3"></i>
+                                              </a>
+                                          </p>
+
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!--end drawer-->
+                  </div>
+                  <!--end mobile menu-->
+              </div>
+          </div>
+          <!--scroll progress bar-->
+          <div id="scroll-progress" class="bg-primary dark:bg-secondary h-1 top-0 fixed left-0 z-50"></div>
+      </header>
+      <!--end header-->
+        <!--back to top button-->
+        <button id="back-to-top"
+            class="hidden fixed bottom-5 right-5 bg-primary dark:bg-secondary text-light dark:text-dark rounded-full w-16 h-16 p-2 transition ease-in-out delay-75 duration-200 hover:bg-primary-hover dark:hover:bg-secondary-hover hover:shadow-large dark:hover:shadow-secondary hover:shadow-primary hover:scale-105">
+            <i class="ri-arrow-up-line" style="font-size: 2rem"></i>
+        </button>
+
+
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-t from-primary dark:from-secondary to-light dark:to-dark">
+            <div class="container mx-auto max-w-screen-xl px-4 py-32 flex h-screen items-center">
+                <div class="mx-auto text-center">
+                    <!--Typerwriter animation-->
+                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50" id="typewriter"
+                        class="text-3xl md:text-5xl font-bold lg:text-6xl text-light radio-canada-regular">
+                        Discover the Story Behind
+                    </h1>
+                </div>
+                <div class="absolute left-0 right-0 mx-auto text-center pt-32">
+                    <strong
+                        class=" text-3xl md:text-5xl lg:text-6xl radio-canada-regular font-extrabold text-primary dark:text-secondary mt-4">
+                        Visionix
+                    </strong>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- End Hero Section -->
+
+        <!-- Portfolio Section -->
+        <section class="my-[5%]">
+            <div class="container mx-auto max-w-screen-xl p-8 py-10 md:py-2">
+                <header class="text-center">
+                    <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50"
+                        class="text-2xl font-bold md:text-4xl text-dark dark:text-light radio-canada-regular">
+                        <i class="ri-folder-open-fill"></i> Our
+                        <span class="text-primary dark:text-secondary">Work</span>
+                    </h2>
+                    <p data-aos="fade-up" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50"
+                        class="mt-4 max-w-lg text-base md:text-lg mx-auto text-dark dark:text-muted pavanam-regular">
+                        At Visionix, we bring visions to life with modern, user-centric designs and efficient solutions.
+
+                    </p>
+                </header>
+
+                <ul class="mt-8 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Portfolio Item 1 -->
+                    <li>
+                        <a data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" href="#"
+                            class="flex-1 h-full group block overflow-hidden rounded-lg shadow-large transition ease-in-out delay-75 duration-300 transform  hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary">
+                            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Visionix Project - Innovative Startup" class="h-[300px] w-full object-cover  " />
+                            <div class="flex-1 relative pt-4 px-6 pb-6">
+                                <h3
+                                    class="text-lg md:text-xl font-semibold text-dark dark:text-light group-hover:text-primary dark:group-hover:text-secondary">
+                                    Innovative Startup
+                                </h3>
+                                <p class="mt-2 text-dark dark:text-muted text-base md:text-lg">
+                                    Helping startups establish a strong digital presence with customized web solutions.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Portfolio Item 2 -->
+                    <li>
+                        <a data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" href="#"
+                            class="flex-1 h-full group block overflow-hidden rounded-lg shadow-large transition ease-in-out delay-75 transform hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary">
+                            <img src="https://images.pexels.com/photos/3182834/pexels-photo-3182834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Visionix Project - E-Commerce Platform" class="h-[300px] w-full object-cover  " />
+                            <div class="flex-1 relative pt-4 px-6 pb-6">
+                                <h3
+                                    class="text-lg md:text-xl font-semibold text-dark dark:text-light group-hover:text-primary dark:group-hover:text-secondary">
+                                    E-Commerce Platform
+                                </h3>
+                                <p class="mt-2 text-dark dark:text-muted text-base md:text-lg">
+                                    Delivering seamless shopping experiences through scalable and efficient web
+                                    solutions.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Portfolio Item 3 -->
+                    <li class="md:col-span-2 md:col-start-1 lg:col-span-1 lg:col-start-auto">
+                        <a data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" href="#"
+                            class="flex-1 h-full group block overflow-hidden rounded-lg shadow-large transition ease-in-out delay-75 transform hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary">
+                            <img src="https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Visionix Project - Corporate Solutions" class="h-[300px] w-full object-cover  " />
+                            <div class="flex-1 relative pt-4 px-6 pb-6">
+                                <h3
+                                    class="text-lg md:text-xl font-semibold text-dark dark:text-light group-hover:text-primary dark:group-hover:text-secondary">
+                                    Corporate Solutions
+                                </h3>
+                                <p class="mt-2 text-dark dark:text-muted text-base md:text-lg">
+                                    Crafting professional websites that elevate brands and foster customer engagement.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- End Portfolio Section -->
+
+        <!--features section-->
+        <section class="my-[4%]">
+            <div class="container mx-auto max-w-screen-xl p-8">
+                <div class="lg:flex lg:items-center">
+                    <!-- Feature Content -->
+                    <div class="w-full space-y-8 lg:w-1/2">
+                        <div>
+                            <h1 data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canada-regular">
+                                <i class="ri-global-fill"></i> Why Choose <span
+                                    class="text-dark dark:text-light">Visionix Agency</span>
+                            </h1>
+
+                            <div data-aos="fade-up" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50" class="mt-2">
+                                <span class="inline-block w-60 h-1 bg-primary dark:bg-secondary rounded-full"></span>
+                                <span
+                                    class="inline-block w-10 h-1 ml-1 bg-primary dark:bg-secondary rounded-full"></span>
+                                <span
+                                    class="inline-block w-5 h-1 ml-1 bg-primary dark:bg-secondary rounded-full"></span>
+                            </div>
+                        </div>
+
+                        <!-- Feature 1 -->
+                        <div class="md:flex md:items-start">
+                            <span data-aos="flip-up" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="inline-block py-2 px-2.5  text-light bg-primary rounded-xl md:mx-4 dark:text-dark dark:bg-secondary">
+                                <i class="ri-hand-coin-fill text-xl"></i>
+                            </span>
+                            <div class="mt-4 md:mx-4 md:mt-0">
+                                <h1 data-aos="flip-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50"
+                                    class="text-lg md:text-xl font-semibold text-dark capitalize dark:text-light">
+                                    Tailored Solutions
+                                </h1>
+                                <p data-aos="flip-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="mt-3 text-dark dark:text-muted text-base md:text-lg">
+                                    We create personalized strategies to elevate your brand's online presence and
+                                    achieve
+                                    measurable growth.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="md:flex md:items-start">
+                            <span data-aos="flip-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="inline-block  py-2 px-2.5 text-light bg-primary rounded-xl md:mx-4 dark:text-dark dark:bg-secondary">
+                                <i class="ri-equalizer-fill text-xl"></i>
+                            </span>
+                            <div class="mt-4 md:mx-4 md:mt-0">
+                                <h1 data-aos="flip-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50"
+                                    class="text-lg md:text-xl font-semibold text-dark capitalize dark:text-light">
+                                    Seamless Integration
+                                </h1>
+                                <p data-aos="flip-up" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="mt-3 text-dark dark:text-muted text-base md:text-lg">
+                                    Our solutions integrate seamlessly into your existing workflow, ensuring smooth
+                                    implementation and adoption.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="md:flex md:items-start">
+                            <span data-aos="flip-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="inline-block py-2 px-2.5 text-light bg-primary rounded-xl md:mx-4 dark:text-dark dark:bg-secondary">
+                                <i class="ri-database-fill text-xl"></i>
+                            </span>
+                            <div class="mt-4 md:mx-4 md:mt-0">
+                                <h1 data-aos="flip-up" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50"
+                                    class="text-lg md:text-xl font-semibold text-dark capitalize dark:text-light">
+                                    Data-Driven Approach
+                                </h1>
+                                <p data-aos="flip-up" data-aos-duration="1500" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="mt-3 text-dark dark:text-muted text-base md:text-lg">
+                                    We use cutting-edge analytics to make data-backed decisions that drive real results
+                                    for
+                                    your business.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature Image -->
+                    <div data-aos="flip-left" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50" class="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
+                        <img class="object-cover w-[34rem] h-[30rem] rounded-lg shadow-large shadow-primary dark:shadow-secondary transition ease-in-out duration-100 delay-75 hover:-translate-y-1 hover:scale-105 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary"
+                            src="https://images.pexels.com/photos/7652044/pexels-photo-7652044.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Visionix Agency">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end features section-->
+
+
+        <!-- Journey Section -->
+        <section class="my-[4%]">
+            <div class="container mx-auto max-w-screen-xl p-8 py-10 md:py-2">
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+                    <!-- Image Section -->
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50"
+                        class="relative overflow-hidden rounded-lg sm:h-80 order-last h-full shadow-large shadow-primary dark:shadow-secondary">
+                        <img alt="Visionix Journey"
+                            src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            class="absolute inset-0 h-full w-full object-cover" />
+                    </div>
+
+                    <!-- Content Section -->
+                    <div class="lg:py-24">
+                        <h2 data-aos="fade-down" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canada-regular">
+                            <i class="ri-community-fill"></i> Our <span class="text-dark dark:text-light">Vision</span>
+                            & <span class="text-dark dark:text-light">Journey</span>
+                        </h2>
+
+                        <p data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="mt-4 text-base md:text-lg text-dark dark:text-muted pavanam-regular">
+                            Since our inception, Visionix has been dedicated to transforming businesses through
+                            innovative digital
+                            solutions. Our journey began with a small yet passionate team, committed to creating
+                            impactful designs
+                            and strategies that resonate with audiences worldwide.
+                        </p>
+
+                        <p data-aos="fade-down" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" class="mt-4 text-base md:text-lg text-dark dark:text-muted">
+                            Over the years, we have grown into a recognized agency, collaborating with diverse
+                            industries to deliver
+                            data-driven insights, seamless integrations, and unparalleled user experiences. Every
+                            milestone in our
+                            journey reflects our dedication to excellence and our vision to empower businesses with
+                            cutting-edge
+                            digital solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Journey Section -->
+
+        <!-- Our Founder Section for Visionix -->
+        <section class="my-[5%]">
+            <div class="container mx-auto p-8 max-w-screen-xl py-10 md:py-2">
+                <div class="flex flex-col gap-8 md:flex-row items-center max-w-8xl">
+                    <div class="w-full md:w-1/2 lg:pr-16">
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canda-regular">
+                            <i class="ri-user-2-fill"></i> Meet Our <span class="text-dark dark:text-light">Visionary
+                                Leader</span>
+                        </h2>
+                        <div class="pavanam-regular text-dark dark:text-muted">
+                            <h3 data-aos="fade-down" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50" class="mt-4 text-base md:text-lg ">
+                                At Visionix, our founder’s innovative mindset has paved the way for a transformative
+                                journey
+                                in the digital world.
+                                Combining years of experience and an unwavering passion for design, technology, and
+                                growth,
+                                their leadership drives
+                                our commitment to empower businesses with creative, customer-focused solutions.
+                            </h3>
+                            <p data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50" class="mt-4 text-base md:text-lg ">
+                                Guided by this vision, Visionix has become a catalyst for change, where ideas meet
+                                execution
+                                to deliver
+                                unmatched value in the digital landscape.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50" class="w-full md:w-1/2 flex justify-center">
+                        <img src="https://images.pexels.com/photos/3777947/pexels-photo-3777947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Founder of Visionix"
+                            class="rounded-lg shadow-large transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Our Founder Section for Visionix -->
+
+
+        <!-- How We Work Section -->
+        <section class="my-[4%]">
+            <div class="container max-w-screen-xl mx-auto p-8 py-10 md:py-2">
+                <div class="text-center">
+                    <p data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50"
+                        class="mt-4 text-lg md:text-xl font-semibold mb-4 flex items-center justify-center text-primary dark:text-secondary">
+                        Our Process
+                    </p>
+                    <h3 data-aos="fade-down" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50" class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary">
+                        <i class="ri-flow-chart mr-3"></i>How <span class="text-dark dark:text-light">Visionix
+                            Works</span>
+                    </h3>
+                </div>
+
+                <div class="mt-20">
+                    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+                        <!-- Step 1 -->
+                        <li data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="bg-light dark:bg-dark p-5 pb-10 text-center rounded-lg shadow-large shadow-primary dark:shadow-secondary ">
+                            <div
+                                class="flex flex-col items-center transition ease-in-out delay-75 duration-300 hover:-translate-y-1 hover:scale-100">
+                                <div class="flex-shrink-0 relative top-0 -mt-16">
+                                    <div
+                                        class="flex items-center justify-center h-20 w-20 rounded-full bg-primary dark:bg-secondary text-light dark:text-dark border-4 border-secondary dark:border-primary text-xl font-semibold shadow-extra-large">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <h4 class="text-lg leading-6 font-semibold text-primary dark:text-secondary">
+                                        Discovery & Analysis</h4>
+                                    <p class="mt-2 text-base leading-6 text-dark dark:text-muted">
+                                        We start by diving deep into your objectives, conducting research, and defining
+                                        key
+                                        requirements to bring your vision to life.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Step 2 -->
+                        <li data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="bg-light dark:bg-dark p-5 pb-10 text-center rounded-lg shadow-large shadow-primary dark:shadow-secondary ">
+                            <div
+                                class="flex flex-col items-center transition ease-in-out delay-75 duration-300 hover:-translate-y-1 hover:scale-100">
+                                <div class="flex-shrink-0 relative top-0 -mt-16">
+                                    <div
+                                        class="flex items-center justify-center h-20 w-20 rounded-full bg-primary dark:bg-secondary text-light dark:text-dark border-4 border-secondary dark:border-primary text-xl font-semibold shadow-extra-large">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <h4 class="text-lg leading-6 font-semibold text-primary dark:text-secondary">Design
+                                        & Development</h4>
+                                    <p class="mt-2 text-base leading-6 text-dark dark:text-muted">
+                                        Using the latest technologies, we design and build intuitive, scalable solutions
+                                        tailored
+                                        to meet your needs and exceed expectations.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Step 3 -->
+                        <li data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="bg-light dark:bg-dark p-5 pb-10 text-center md:w-96 lg:w-full rounded-lg shadow-large shadow-primary dark:shadow-secondary md:col-span-2 md:col-start-1 mx-auto lg:col-span-1 lg:col-start-auto">
+                            <div
+                                class="flex flex-col items-center transition ease-in-out delay-75 duration-300 hover:-translate-y-1 hover:scale-100">
+                                <div class="flex-shrink-0 relative top-0 -mt-16">
+                                    <div
+                                        class="flex items-center justify-center h-20 w-20 rounded-full bg-primary dark:bg-secondary text-light dark:text-dark border-4 border-secondary dark:border-primary text-xl font-semibold shadow-extra-large">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <h4 class="text-lg leading-6 font-semibold text-primary dark:text-secondary">Launch
+                                        & Support</h4>
+                                    <p class="mt-2 text-base leading-6 text-dark dark:text-muted">
+                                        After a seamless launch, we provide continuous support and updates, ensuring
+                                        your success
+                                        as your business evolves.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End How We Work Section -->
+
+
+        <!-- Blog Section -->
+        <section class="my-[4%]">
+            <div class="container mx-auto max-w-screen-xl p-8 py-10 md:py-2">
+                <header class="text-center">
+                    <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50"
+                        class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canada-regular">
+                        <i class="ri-funds-fill mr-3"></i>Our <span class="text-dark dark:text-light">Solutions</span>
+                    </h2>
+                    <p data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="100"
+                        class="mt-4 max-w-2xl mx-auto text-base text-dark dark:text-muted pavanam-regular">
+                        Discover how Visionix supports your business goals through curated solutions designed to drive
+                        growth, innovation, and resilience.
+                    </p>
+                </header>
+
+                <ul class="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 pavanam-regular">
+                    <!-- Solution 1 -->
+                    <li>
+                        <article
+                            class="group bg-light dark:bg-dark flex-1 h-full rounded-xl shadow-large shadow-primary dark:shadow-secondary overflow-hidden">
+                            <img data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50" alt="Market Analysis"
+                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80"
+                                class="h-48 w-full object-cover transition-transform group-hover:scale-105 duration-300" />
+                            <div class="p-6">
+                                <a data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="100" href="#" class="block">
+                                    <h3 class="text-lg md:text-xl font-semibold text-primary dark:text-secondary">
+                                        In-depth <span class="text-dark dark:text-light">Market Analysis</span>
+                                    </h3>
+                                </a>
+                                <p data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="150" class="mt-3 text-md text-dark dark:text-muted">
+                                    Gain deep insights into market dynamics with our comprehensive analysis services.
+                                    Stay ahead of the competition with tailored, actionable insights.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- Solution 2 -->
+                    <li>
+                        <article
+                            class="group bg-light dark:bg-dark flex-1 h-full rounded-xl shadow-large shadow-primary dark:shadow-secondary overflow-hidden">
+                            <img data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50" alt="Strategic Planning"
+                                src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                class="h-48 w-full object-cover transition-transform group-hover:scale-105 duration-300" />
+                            <div class="p-6">
+                                <a data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="100" href="#" class="block">
+                                    <h3 class="text-lg md:text-xl font-semibold text-primary dark:text-secondary">
+                                        Strategic <span class="text-dark dark:text-light">Planning & Execution</span>
+                                    </h3>
+                                </a>
+                                <p data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="150" class="mt-3 text-md text-dark dark:text-muted">
+                                    Collaborate with our experts to craft and execute strategies aligned with your
+                                    business vision, ensuring sustainable growth and market adaptability.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- End Blog Section -->
+
+        <!--cta section-->
+        <section class="my-[4%]">
+            <div class="container mx-auto max-w-screen-xl p-8 ">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back"
+                    data-aos-delay="150">
+                    <p class="font-medium text-lg md:text-xl text-primary dark:text-secondary ">Contact us</p>
+
+                    <h1
+                        class="mt-2 text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canada-regular">
+                        Get in touch</h1>
+
+                    <p class="mt-3 text-dark dark:text-muted text-base md:text-lg pavanam-regular">Our friendly team
+                        would
+                        love to hear from you.</p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
+                    <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1 pavanam-regular">
+                        <div data-aos="flip-up" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="150">
+                            <span class="inline-block p-3 text-xl text-primary dark:text-secondary rounded-full ">
+                                <i class="ri-mail-send-fill "></i>
+                            </span>
+
+                            <h2 class="mt-4  font-bold text-base md:text-lg text-dark dark:text-light">Email</h2>
+                            <p class="mt-2 text-md text-dark dark:text-muted">Our friendly team is here to help.
+                            </p>
+                            <p class="mt-2 text-md text-primary dark:text-secondary ">info@agency.com</p>
+                        </div>
+
+                        <div data-aos="flip-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="150">
+                            <span class="inline-block p-3 text-xl text-primary dark:text-secondary rounded-full ">
+                                <i class="ri-map-pin-2-fill"></i>
+                            </span>
+
+                            <h2 class="mt-4  font-bold text-base md:text-lg text-dark dark:text-light">Office</h2>
+                            <p class="mt-2 text-md text-dark dark:text-muted">Come say hello at our office HQ.
+                            </p>
+                            <p class="mt-2 text-md text-primary dark:text-secondary ">100 Smith Street Collingwood VIC
+                                3066 AU</p>
+                        </div>
+
+                        <div data-aos="flip-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="150">
+                            <span class="inline-block p-3 text-xl text-primary dark:text-secondary rounded-full ">
+                                <i class="ri-phone-fill"></i>
+                            </span>
+
+                            <h2 class="mt-4  font-bold text-base md:text-lg text-dark dark:text-light">Phone</h2>
+                            <p class="mt-2 text-md text-dark dark:text-muted">Mon-Fri from 8am to 5pm.</p>
+                            <p class="mt-2 text-md text-primary dark:text-secondary ">+1 (555) 000-0000</p>
+                        </div>
+                        <div data-aos="flip-up" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="150">
+                            <span class="inline-block p-3 text-xl text-primary dark:text-secondary rounded-full ">
+                                <i class="ri-instagram-fill"></i>
+                            </span>
+
+                            <h2 class="mt-4  font-bold text-base md:text-lg text-dark dark:text-light">Instagram</h2>
+                            <p class="mt-2 text-md text-dark dark:text-muted">Come say hellp at our social media</p>
+                            <p class="mt-2 text-md text-primary dark:text-secondary ">Example Agency</p>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="150"
+                        class="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto shadow-large shadow-primary dark:shadow-secondary">
+                        <iframe width="100%" height="100%" frameborder="0" title="map" marginheight="0" marginwidth="0"
+                            scrolling="no"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76448.75661182322!2d144.9385810995675!3d-37.805593541409785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642e0ab25c14b%3A0xc09a0eb2e92206ff!2s100%20Smith%20St%2C%20Collingwood%20VIC%203066%2C%20Australia!5e0!3m2!1sid!2sid!4v1740487380912!5m2!1sid!2sid"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end cta section-->
+
+     <!-- Footer -->
+     <footer class="shadow-extra-large shadow-primary dark:shadow-secondary">
+        <!-- Container for footer content -->
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2">
+                <!-- Left section -->
+                <div class="py-8 lg:order-last lg:border-b-0 lg:border-s border-light dark:border-dark lg:py-16 lg:ps-16">
+                    <!-- Logo (Mobile only) -->
+                    <div class="mt-8 space-y-4 lg:mt-0">
+                        <div class="block  lg:hidden">
+                            <a href="../../index.html">
+                                <img src="../../images/logo.png" alt="Logo" class="h-28 w-auto">
+                            </a>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-medium text-primary dark:text-secondary">
+                                Discover <span class="text-dark dark:text-light">the Best Solutions</span>
+                            </h2>
+                            <p class="mt-4 max-w-lg text-dark dark:text-muted">
+                                At Visionix, we are dedicated to delivering innovative and reliable solutions
+                                tailored to your needs. Contact us for more information or schedule a consultation
+                                to elevate your brand with cutting-edge technology.
+                            </p>
+                        </div>
+                        <!-- Social Media Links -->
+                        <div class="mt-6 flex gap-4">
+                            <a href="#" class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="#" class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="#" class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="#" class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Right section-->
+                <div class="py-8 lg:py-16 lg:pe-16">
+                    <div class="hidden lg:text-3xl font-semibold radio-canada-regular lg:block">
+                        <a href="../../index.html">
+                            <img src="../../images/logo.png" alt="Logo" class="h-28 w-auto">
+                        </a>
+                    </div>
+                    <!-- Links section -->
+                    <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
+                        <div>
+                            <p class="font-medium text-primary dark:text-secondary">Legal & Press</p>
+                            <ul class="mt-6 space-y-4 text-sm">
+                                <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Privacy Policy</a></li>
+                                <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Presskit</a></li>
+                                <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-medium text-primary dark:text-secondary">Company</p>
+                            <ul class="mt-6 space-y-4 text-sm">
+                                <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">About</a></li>
+                                <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Services</a></li>
+                                <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Portfolio</a></li>
+                                <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Blog</a></li>
+                                <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-medium text-primary dark:text-secondary">Helpful Links</p>
+                            <ul class="mt-6 space-y-4 text-sm">
+                                <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Contact</a></li>
+                                <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Documentation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer bottom: Terms and copyright -->
+                    <div class="mt-8 border-t border-light dark:border-dark pt-8">
+                        <ul class="flex flex-wrap gap-4 text-lg">
+                            <li><a href="#" class="text-darkmuted dark:text-light transition hover:opacity-75">Terms & Conditions</a></li>
+                            <li><a href="#" class="text-darkmuted dark:text-light transition hover:opacity-75">Privacy Policy</a></li>
+                            <li><a href="#" class="text-darkmuted dark:text-light transition hover:opacity-75">Cookies</a></li>
+                        </ul>
+                        <p class="mt-8 text-lgs text-darkmuted dark:text-light">&copy; 2025 Visionix. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <!-- End Footer -->
+    </main>
+      <!--main custom js-->
+    <script src="../../js/main.js"></script>
+
+    <!--flowbite js-->
+    <script src="../../js/flowbite.min.js"></script>
+    <!--aos js-->
+    <script src="../../js/aos.js"></script>
+
+     <!--call typerwriter function from main.js-->
+     <script type="text/javascript">
+        TyperwriterFunction();
+      </script>
+    
+    <script>
+        // aos scirpt init
+        AOS.init();
+    </script>
+
+   
+</body>
+
+</html>

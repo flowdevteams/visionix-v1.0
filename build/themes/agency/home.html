@@ -1,0 +1,1548 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tailwind css-->
+    <link href="../../css/output.css" rel="stylesheet">
+    <!--main custom css-->
+    <link href="../../css/main.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/site.webmanifest">
+    <!--remix icon css-->
+    <link href="../../remixicon/fonts/remixicon.css" rel="stylesheet">
+    <!--flowbite css-->
+    <link href="../../css/flowbite.min.css" rel="stylesheet">
+    <!--aos css-->
+    <link href="../../css/aos.css" rel="stylesheet">
+    <!--keen slider -->
+    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+    <!--alpine js-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+
+</head>
+
+<body class="bg-light dark:bg-dark transition-colors ease-in-out delay-100 duration-500">
+    <!--loader-->
+    <div id="loader">
+        <svg class="h-20 w-20 animate-spin stroke-dark dark:stroke-light" viewBox="0 0 256 256">
+            <line x1="128" y1="32" x2="128" y2="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+            </line>
+            <line x1="195.9" y1="60.1" x2="173.3" y2="82.7" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="24">
+            </line>
+            <line x1="224" y1="128" x2="192" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+            </line>
+            <line x1="195.9" y1="195.9" x2="173.3" y2="173.3" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="24"></line>
+            <line x1="128" y1="224" x2="128" y2="192" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+            </line>
+            <line x1="60.1" y1="195.9" x2="82.7" y2="173.3" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="24">
+            </line>
+            <line x1="32" y1="128" x2="64" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+            </line>
+            <line x1="60.1" y1="60.1" x2="82.7" y2="82.7" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="24">
+            </line>
+        </svg>
+        <p class="md:text-5xl text-4xl font-semibold text-dark dark:text-light radio-canada-regular">Visio<span
+                class="text-primary dark:text-secondary">Nix</span> </p>
+    </div>
+    <!--end loader-->
+    <main id="content">
+        <!--header-->
+        <header
+            class="bg-light dark:bg-dark w-full transition-colors ease-in-out delay-75 duration-300 shadow-large shadow-primary dark:shadow-secondary p-2 fixed top-0 z-50  bg-opacity-70 backdrop-blur">
+            <div class="mx-auto  px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between max-w-screen-xl mx-auto">
+                    <div class="relative">
+
+                        <a href="../../index.html">
+                            <img src="../../images/logo.png" alt="Logo" class="h-32 w-auto">
+                        </a>
+                    </div>
+                    <div class="md:flex md:items-center md:gap-12 mx-auto">
+                        <nav aria-label="Global" class="hidden xl:block ms-20">
+                            <ul class="flex items-center gap-8 text-sm">
+                                <!-- Home -->
+                                <li class="relative group">
+                                    <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 "
+                                        href="home.html">Home</a>
+                                </li>
+                                <!-- About-->
+                                <li class="relative group">
+                                    <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                                        href="about.html">About</a>
+                                </li>
+                                <!-- Services-->
+                                <li class="relative group">
+                                    <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                                        href="services.html">Services</a>
+                                </li>
+                                <!-- Portfolio-->
+                                <li class="relative group">
+                                    <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                                        href="portfolio.html">Portfolio</a>
+                                </li>
+                                <!-- Blog-->
+                                <li class="relative group">
+                                    <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                                        href="blog.html">Blog</a>
+                                </li>
+                                <!-- Contact-->
+                                <li class="relative group">
+                                    <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                                        href="contact.html">Contact</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--download and docs button-->
+                    <div class="hidden xl:block">
+                        <div class="sm:gap-4 flex">
+                            <a class="rounded-3xl bg-primary dark:bg-secondary md:px-8 py-2.5 px-4 text-md font-medium text-light dark:text-dark flex items-center gap-1 transition ease-in-out delay-150 hover:shadow-small hover:shadow-primary dark:shadow-secondary hover:text-light dark:hover:text-dark hover:bg-primary-hover dark:hover:bg-secondary-hover duration-300"
+                                href="#">
+                                Download
+                                <i class="ri-arrow-down-line"></i>
+                            </a>
+                            <a class="rounded-3xl bg-primary dark:bg-secondary md:px-8 py-2.5 px-4 text-md font-medium text-light dark:text-dark flex items-center gap-1 transition ease-in-out delay-150 hover:shadow-small hover:shadow-primary dark:shadow-secondary hover:text-light dark:hover:text-dark hover:bg-primary-hover dark:hover:bg-secondary-hover duration-300"
+                                href="../../docs/documentation.html">
+                                Docs
+                                <i class="ri-article-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Button to toggle between dark and light mode -->
+                    <div class="flex items-center gap-4 ms-4">
+                        <div class="flex sm:gap-4">
+                            <button onclick="toggleDarkMode()" class="p-2 text-primary dark:text-secondary">
+                                <i id="dark-mode-icon" class="ri-sun-line text-2xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Toggle Button -->
+
+                    <div class="block xl:hidden">
+                        <button id="menu-button"
+                            class="rounded  p-2 text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary"
+                            type="button" data-drawer-target="drawer-body-scrolling"
+                            data-drawer-show="drawer-body-scrolling" data-drawer-body-scrolling="true"
+                            aria-controls="drawer-body-scrolling">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!--Mobile Menu -->
+                    <div>
+                        <!-- drawer  -->
+                        <div id="drawer-body-scrolling"
+                            class="fixed top-0 left-0 z-40 h-screen  p-4 overflow-y-auto transition-transform -translate-x-full bg-light w-64 dark:bg-dark"
+                            tabindex="-1" aria-labelledby="drawer-body-scrolling-label">
+                            <h5 id="drawer-body-scrolling-label"
+                                class="text-base font-semibold text-primary uppercase dark:text-secondary">
+                                MENU
+                            </h5>
+                            <!-- Close Button for Mobile Menu -->
+                            <button type="button" data-drawer-hide="drawer-body-scrolling"
+                                aria-controls="drawer-body-scrolling"
+                                class="text-dark bg-transparent hover:bg-light hover:text-dark rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-dark dark:hover:text-light">
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                                <span class="sr-only">Close
+                                    menu</span>
+                            </button>
+                            <div class="py-4 overflow-y-auto">
+                                <ul class="space-y-2 font-medium">
+
+
+                                    <!--home-->
+                                    <li>
+                                        <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                            href="home.html">
+                                            <i
+                                                class="ri-home-2-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                                class="ms-3">Home</span>
+                                        </a>
+                                    </li>
+                                    <!--about-->
+                                    <li>
+                                        <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                            href="about.html">
+                                            <i
+                                                class="ri-account-pin-box-line text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                                class="ms-3">About</span>
+                                        </a>
+                                    </li>
+                                    <!--services-->
+                                    <li>
+                                        <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                            href="services.html">
+                                            <i
+                                                class="ri-customer-service-2-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                                class="ms-3">Services</span>
+                                        </a>
+                                    </li>
+                                    <!--portfolio-->
+                                    <li>
+                                        <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                            href="portfolio.html">
+                                            <i
+                                                class="ri-map-pin-user-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                                class="ms-3">Portfolio</span>
+                                        </a>
+                                    </li>
+                                    <!--blog-->
+                                    <li>
+                                        <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                            href="blog.html">
+                                            <i
+                                                class="ri-news-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                                class="ms-3">Blog</span>
+                                        </a>
+                                    </li>
+                                    <!--contact-->
+                                    <li>
+                                        <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                                            href="contact.html">
+                                            <i
+                                                class="ri-phone-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                                                class="ms-3">Contact</span>
+                                        </a>
+                                    </li>
+
+                                    <hr class="mb-6">
+                                    <!--donwload and docs link-->
+                                    <li class="flex items-center gap-4  p-2">
+                                        <div class="block xl:hidden ">
+
+                                            <p class=" mb-6">
+                                                <a href="#"
+                                                    class="inline-flex items-center font-medium text-primary dark:text-secondary  hover:underline">
+                                                    Download
+                                                    <i
+                                                        class="ri-arrow-down-line text-primary dark:text-secondary ms-3"></i>
+                                                </a>
+                                            </p>
+                                            <p class="mb-6">
+                                                <a href="../../docs/documentation.html"
+                                                    class="inline-flex items-center font-medium text-primary dark:text-secondary hover:underline">
+                                                    Docs
+                                                    <i
+                                                        class="ri-article-fill text-primary dark:text-secondary ms-3"></i>
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end drawer-->
+                    </div>
+                    <!--end mobile menu-->
+                </div>
+            </div>
+            <!--scroll progress bar-->
+            <div id="scroll-progress" class="bg-primary dark:bg-secondary h-1 top-0 fixed left-0 z-50"></div>
+        </header>
+        <!--end header-->
+
+        <!--back to top button-->
+        <button id="back-to-top"
+            class="hidden fixed bottom-5 right-5 bg-primary dark:bg-secondary text-light dark:text-dark rounded-full w-16 h-16 p-2 transition ease-in-out delay-75 duration-200 hover:bg-primary-hover dark:hover:bg-secondary-hover hover:shadow-large dark:hover:shadow-secondary hover:shadow-primary hover:scale-105">
+            <i class="ri-arrow-up-line" style="font-size: 2rem"></i>
+        </button>
+
+        <!--hero section-->
+        <section class="bg-white  flex relative items-center overflow-hidden h-screen ">
+            <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+                <!--banner video-->
+                <video autoplay loop muted class="min-w-full min-h-full absolute object-cover"
+                    src="https://videos.pexels.com/video-files/3209211/3209211-uhd_2560_1440_25fps.mp4"
+                    type="video/mp4"></video>
+                <div class="absolute inset-0 bg-black opacity-60"></div>
+            </div>
+            <!--hero content-->
+            <div class="container mx-auto max-w-screen-xl px-10 flex relative py-16 ">
+                <div class="sm:w-2/3 lg:w-4/5 flex flex-col relative z-20">
+                    <span class="w-20 h-2 bg-primary dark:bg-secondary mb-12 z-0"> </span>
+                    <h1 data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50"
+                        class="uppercase md:text-5xl text-2xl flex flex-col leading-none text-light font-semibold mb-5 radio-canada-regular">
+                        Transforming
+                        <span class="md:text-4xl text-xl">visions into impact</span>
+                    </h1>
+                    <p data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50"
+                        class="font-medium text-sm md:text-lg lg:text-xl  text-light dark:text-muted pavanam-regular">
+                        At Visionix, we craft tailor-made strategies and cutting-edge solutions to elevate your brand's
+                        presence.
+                        Let's turn your ideas into powerful results and make your vision stand out in a competitive
+                        landscape.
+                    </p>
+                    <div data-aos="fade-down" data-aos-duration="900" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50" class="flex mt-8">
+                        <a href="#"
+                            class="uppercase md:px-5 px-3 py-2 rounded-xl  bg-primary dark:bg-secondary border-2 border-transparent text-light dark:text-dark font-semibold lg:text-md md:text-sm text-xs mr-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100  hover:shadow-medium hover:shadow-primary dark:hover:shadow-secondary  hover:bg-primary-hover dark:hover:bg-secondary-hover  duration-300">
+                            Get Started
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--marquee animation-->
+            <div
+                class="marquee-container border-t border-b border-lightmuted dark:border-darkmuted bottom-0 p-1 bg-light dark:bg-dark ">
+                <div class="marquee-content gap-12 pt-4 text-dark dark:text-light flex radio-canada-regular">
+                    <span
+                        class="uppercase flex flex-col leading-none font-semibold mb-5 radio-canada-regular md:text-xl lg:text-2xl whitespace-nowrap">
+                        Branding Strategy
+                    </span>
+                    <span
+                        class="uppercase flex flex-col leading-none font-semibold mb-5 radio-canada-regular md:text-xl lg:text-2xl whitespace-nowrap">
+                        Creative Content
+                    </span>
+                    <span
+                        class="uppercase flex flex-col leading-none font-semibold mb-5 radio-canada-regular md:text-xl lg:text-2xl whitespace-nowrap">
+                        Web Development
+                    </span>
+                    <span
+                        class="uppercase flex flex-col leading-none font-semibold mb-5 radio-canada-regular md:text-xl lg:text-2xl whitespace-nowrap">
+                        Marketing Analytics
+                    </span>
+                    <span
+                        class="uppercase flex flex-col leading-none font-semibold mb-5 radio-canada-regular md:text-xl lg:text-2xl whitespace-nowrap">
+                        SEO Optimization
+                    </span>
+                    <span
+                        class="uppercase flex flex-col leading-none font-semibold mb-5 radio-canada-regular md:text-xl lg:text-2xl whitespace-nowrap">
+                        Social Media Campaigns
+                    </span>
+                    <span
+                        class="uppercase flex flex-col leading-none font-semibold mb-5 radio-canada-regular md:text-xl lg:text-2xl whitespace-nowrap">
+                        Video Production
+                    </span>
+                    <span
+                        class="uppercase flex flex-col leading-none font-semibold mb-5 radio-canada-regular md:text-xl lg:text-2xl whitespace-nowrap">
+                        Email Marketing
+                    </span>
+                    <span
+                        class="uppercase flex flex-col leading-none font-semibold mb-5 radio-canada-regular md:text-xl lg:text-2xl whitespace-nowrap">
+                        UI/UX Design
+                    </span>
+                </div>
+            </div>
+            <!--end marquee animation-->
+        </section>
+        <!--end hero section-->
+
+        <!--about us section-->
+        <section class="my-[4%]">
+            <div class="container mx-auto p-8 py-10 md:py-2 max-w-screen-xl">
+                <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-12">
+                    <div class="text-dark sm:text-lg dark:text-muted">
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="mb-4 font-medium md:text-xl text-lg text-primary dark:text-secondary radio-canada-regular flex items-center gap-2">
+                            <i class="ri-user-community-line" style="font-size: 2rem;"></i> About
+                            <span class="text-dark dark:text-light">Us</span>
+                        </h2>
+                        </h2>
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="mb-4 font-bold md:text-4xl text-2xl text-primary dark:text-secondary radio-canada-regular">
+                            Empowering Brands
+                            <span class="text-dark dark:text-light">With Creative Solutions</span>
+                        </h2>
+                        <p data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="mb-8 font-light text-base md:text-lg text-dark dark:text-muted pavanam-regular">
+                            At Visionix, we craft innovative strategies that transform businesses into industry leaders.
+                            With a team of seasoned professionals, we specialize in delivering results-driven solutions
+                            tailored to meet your unique goals and vision.
+                        </p>
+                        <ul data-aos="fade-down" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" role="list"
+                            class="pt-8 space-y-5 border-t my-7 border-light dark:border-dark">
+                            <li data-aos="fade-down" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50" class="flex space-x-3">
+                                <svg class="flex-shrink-0 w-5 h-5 text-primary dark:text-secondary" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                                    Comprehensive Brand Audits
+                                </span>
+                            </li>
+                            <li data-aos="fade-down" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50" class="flex space-x-3">
+                                <svg class="flex-shrink-0 w-5 h-5 text-primary dark:text-secondary" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                                    Data-Driven Marketing Strategies
+                                </span>
+                            </li>
+                            <li data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50" class="flex space-x-3">
+                                <svg class="flex-shrink-0 w-5 h-5 text-primary dark:text-secondary" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                                    Scalable Growth Optimization
+                                </span>
+                            </li>
+                        </ul>
+                        <p data-aos="fade-up" data-aos-duration="1600" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="mb-8 font-light text-base md:text-lg text-dark dark:text-muted pavanam-regular">
+                            Join Visionix and redefine your journey towards sustainable success with tailored
+                            solutions designed just for you.
+                        </p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1700" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50">
+                        <img class="w-full mb-4 rounded-lg lg:mb-0 flex transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-100 shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary"
+                            src="https://images.pexels.com/photos/1367269/pexels-photo-1367269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="business-man">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end about us section-->
+
+        <!--our services section-->
+        <section class="my-[4%]">
+            <div class="container mx-auto p-8 py-10 md:py-2 max-w-screen-xl ">
+                <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
+                    <div class="mx-auto lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
+                        <h2 data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="mb-4 text-lg font-medium md:text-xl text-primary dark:text-secondary radio-canada-regular flex items-center gap-2">
+                            <i class="ri-customer-service-2-fill" style="font-size: 2rem;"></i> Our
+                            <span class="text-dark dark:text-light">Services</span>
+                        </h2>
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="mb-4  font-bold md:text-4xl text-2xl text-dark dark:text-light radio-canada-regular">
+                            Our <span class="text-primary dark:text-secondary">Premium Services</span></h2>
+
+                        <p data-aos="fade-up" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" class="mt-4 font-light text-base md:text-lg text-dark dark:text-muted">
+                            Visionix offers cutting-edge solutions tailored to meet the needs of modern businesses.
+                            From digital strategies to brand growth, we deliver comprehensive services designed to
+                            drive success.
+                        </p>
+                        <div data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50">
+                            <a href="#"
+                                class="mt-8 inline-block lg:max-w-lg rounded-xl bg-primary dark:bg-secondary md:px-5 px-3 py-2.5 lg:text-md md:text-sm text-xs font-semibold text-light dark:text-dark hover:bg-primary-hover dark:hover:bg-secondary-hover focus:outline-none shadow-large transition transform ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 hover:shadow-primary dark:hover:shadow-secondary">
+                                Discover More
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 text-center">
+                        <a data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="block rounded-xl shadow-small shadow-primary dark:shadow-secondary p-4 transition ease-in-out delay-100 duration-100 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary focus:outline-none focus:ring"
+                            href="#">
+                            <span class="inline-block rounded-lg bg-primary dark:bg-secondary p-3 w-12">
+                                <i class="ri-global-fill text-light dark:text-dark" style="font-size: 1rem;"></i>
+                            </span>
+                            <h2 class="mt-2 font-bold text-dark dark:text-light">Web Development</h2>
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm text-dark dark:text-light">
+                                Responsive and high-performance websites.
+                            </p>
+                        </a>
+
+                        <a data-aos="fade-down" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="block rounded-xl shadow-small shadow-primary dark:shadow-secondary p-4 transition ease-in-out delay-100 duration-100 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary focus:outline-none focus:ring"
+                            href="#">
+                            <span class="inline-block rounded-lg bg-primary dark:bg-secondary p-3 w-12">
+                                <i class="ri-bar-chart-box-fill text-light dark:text-dark" style="font-size: 1rem;"></i>
+                            </span>
+                            <h2 class="mt-2 font-bold text-dark dark:text-light">UI/UX Design</h2>
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm text-dark dark:text-light">
+                                Engaging designs that enhance user experience .
+                            </p>
+                        </a>
+
+                        <a data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="block rounded-xl shadow-small shadow-primary dark:shadow-secondary p-4 transition ease-in-out delay-100 duration-100 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary focus:outline-none focus:ring"
+                            href="#">
+                            <span class="inline-block rounded-lg bg-primary dark:bg-secondary p-3 w-12">
+                                <i class="ri-pie-chart-fill text-light dark:text-dark" style="font-size: 1rem;"></i>
+                            </span>
+                            <h2 class="mt-2 font-bold text-dark dark:text-light">Digital Marketing</h2>
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm text-dark dark:text-light">
+                                Proven strategies to boost visibility and ROI.
+                            </p>
+                        </a>
+
+                        <a data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="block rounded-xl shadow-small shadow-primary dark:shadow-secondary p-4 transition ease-in-out delay-100 duration-100 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary focus:outline-none focus:ring"
+                            href="#">
+                            <span class="inline-block rounded-lg bg-primary dark:bg-secondary p-3 w-12">
+                                <i class="ri-store-2-fill text-light dark:text-dark" style="font-size: 1rem;"></i>
+                            </span>
+                            <h2 class="mt-2 font-bold text-dark dark:text-light">E-Commerce</h2>
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm text-dark dark:text-light">
+                                Scalable platforms for shopping experiences.
+                            </p>
+                        </a>
+
+                        <a data-aos="fade-up" data-aos-duration="1600" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="block rounded-xl shadow-small shadow-primary dark:shadow-secondary p-4 transition ease-in-out delay-100 duration-100 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary focus:outline-none focus:ring"
+                            href="#">
+                            <span class="inline-block rounded-lg bg-primary dark:bg-secondary p-3 w-12">
+                                <i class="ri-line-chart-line text-light dark:text-dark" style="font-size: 1rem;"></i>
+                            </span>
+                            <h2 class="mt-2 font-bold text-dark dark:text-light">Analytics </h2>
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm text-dark dark:text-light">
+                                Data-driven insights for business strategies.
+                            </p>
+                        </a>
+
+                        <a data-aos="fade-down" data-aos-duration="1700" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="block rounded-xl shadow-small shadow-primary dark:shadow-secondary p-4 transition ease-in-out delay-100 duration-100 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary focus:outline-none focus:ring"
+                            href="#">
+                            <span class="inline-block rounded-lg bg-primary dark:bg-secondary p-3 w-12">
+                                <i class="ri-shake-hands-fill text-light dark:text-dark" style="font-size: 1rem;"></i>
+                            </span>
+                            <h2 class="mt-2 font-bold text-dark dark:text-light">Consulting</h2>
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm text-dark dark:text-light">
+                                Expert guidance to solve challenges.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end our services section-->
+
+        <!-- Video Section with alpine js -->
+        <section>
+            <div class="container mx-auto max-w-screen-xl ">
+                <div class="relative flex mx-auto flex-col p-8">
+                    <div>
+                        <div class="text-center mb-12">
+                            <div data-aos="fade-down" data-aos-duration="600" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50" class="mb-3 flex justify-center"> <span
+                                    class="text-primary dark:text-secondary font-semibold uppercase flex items-center gap-2 "><i
+                                        class="ri-movie-fill" style="font-size: 2rem;"></i> Video
+                                    Showcase</span></div>
+
+                            <h2 data-aos="fade-down" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="font-black md:text-4xl text-2xl text-dark dark:text-light radio-canada-regular">
+                                See Our <span class="text-primary dark:text-secondary">Creative Work</span>
+                            </h2>
+                            <p data-aos="fade-down" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="mt-4 text-base md:text-lg text-dark dark:text-muted pavanam-regular">Watch how we
+                                bring ideas to life through stunning designs and seamless user experiences.</p>
+                            </h2>
+                        </div>
+                        <div class="lg:mt-12 grid grid-cols-1 gap-5  mx-auto md:grid-cols-3 lg:max-w-none">
+
+                            <!--video 1-->
+                            <div data-aos="flip-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="flex flex-col rounded-lg shadow-2xl shadow-secondary overflow-hidden"
+                                x-data="{ play: false }" x-init="$watch('play', (value) => {
+                          if (value) {
+                              $refs.video.play()
+                          } else {
+                              $refs.video.pause()
+                          }
+                      })">
+                                <div
+                                    class="flex-shrink-0 relative transition-all ease-in-out delay-75 duration-300  hover:scale-105 hover:cursor-pointer">
+                                    <video x-ref="video" @click="play = !play">
+                                        <source
+                                            src="https://videos.pexels.com/video-files/7691555/7691555-hd_1920_1080_25fps.mp4">
+                                    </video>
+                                    <div @click="play = true" x-show="!play"
+                                        x-transition:leave="transition ease-in duration-300"
+                                        x-transition:leave-start="opacity-100 transform scale-100"
+                                        x-transition:leave-end="opacity-0 transform scale-90"
+                                        class="absolute inset-0 w-full h-full flex items-center justify-center">
+                                        <svg class="h-20 w-20 text-primary dark:text-secondary" fill="currentColor"
+                                            viewBox="0 0 84 84">
+                                            <circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+                                            <path
+                                                d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--video 2-->
+                            <div data-aos="flip-down" data-aos-duration="1500" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="flex flex-col rounded-lg shadow-2xl shadow-secondary overflow-hidden"
+                                x-data="{ play: false }" x-init="$watch('play', (value) => {
+                          if (value) {
+                              $refs.video.play()
+                          } else {
+                              $refs.video.pause()
+                          }
+                      })">
+                                <div
+                                    class="flex-shrink-0 relative transition-all ease-in-out delay-75 duration-300  hover:scale-105 hover:cursor-pointer">
+                                    <video x-ref="video" @click="play = !play">
+                                        <source
+                                            src="https://videos.pexels.com/video-files/3191422/3191422-uhd_2732_1440_25fps.mp4">
+                                    </video>
+                                    <div @click="play = true" x-show="!play"
+                                        x-transition:leave="transition ease-in duration-300"
+                                        x-transition:leave-start="opacity-100 transform scale-100"
+                                        x-transition:leave-end="opacity-0 transform scale-90"
+                                        class="absolute inset-0 w-full h-full flex items-center justify-center">
+                                        <svg class="h-20 w-20 text-primary dark:text-secondary" fill="currentColor"
+                                            viewBox="0 0 84 84">
+                                            <circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+                                            <path
+                                                d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--video 3-->
+                            <div data-aos="flip-up" data-aos-duration="1700" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="flex flex-col rounded-lg shadow-2xl shadow-secondary overflow-hidden"
+                                x-data="{ play: false }" x-init="$watch('play', (value) => {
+                          if (value) {
+                              $refs.video.play()
+                          } else {
+                              $refs.video.pause()
+                          }
+                      })">
+                                <div
+                                    class="flex-shrink-0 relative transition-all ease-in-out delay-75 duration-300  hover:scale-105 hover:cursor-pointer">
+                                    <video x-ref="video" @click="play = !play">
+                                        <source
+                                            src="https://videos.pexels.com/video-files/6285684/6285684-uhd_2560_1440_30fps.mp4">
+                                    </video>
+                                    <div @click="play = true" x-show="!play"
+                                        x-transition:leave="transition ease-in duration-300"
+                                        x-transition:leave-start="opacity-100 transform scale-100"
+                                        x-transition:leave-end="opacity-0 transform scale-90"
+                                        class="absolute inset-0 w-full h-full flex items-center justify-center">
+                                        <svg class="h-20 w-20 text-primary dark:text-secondary" fill="currentColor"
+                                            viewBox="0 0 84 84">
+                                            <circle opacity="0.9" cx="42" cy="42" r="42" fill="white"></circle>
+                                            <path
+                                                d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Video Section -->
+
+        <!--team section-->
+        <section class="my-[4%]  ">
+            <div class="container max-w-screen-xl  p-8 py-10 md:py-2 mx-auto">
+                <h2 data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out-back" data-aos-delay="50"
+                    class="mb-4 text-lg font-medium md:text-xl text-primary dark:text-secondary radio-canada-regular flex items-center justify-center gap-2">
+                    <i class="ri-group-3-fill" style="font-size: 2rem;"></i> Our
+                    <span class="text-dark dark:text-light">Team</span>
+                </h2>
+                <h2 data-aos="fade-down" data-aos-duration="900" data-aos-easing="ease-in-out-back" data-aos-delay="50"
+                    class="text-2xl font-semibold text-center text-dark capitalize md:text-4xl dark:text-light radio-canada-regular ">
+                    Meet<span class="text-primary dark:text-secondary"> Our Team</span></h2>
+
+                <div class="flex justify-center ">
+                    <div class="grid gap-12 mt-8 grid-cols-2 lg:grid-cols-4">
+                        <div class="w-full max-w-xs text-center">
+                            <img data-aos="fade-down" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="object-cover object-center w-full h-48 mx-auto rounded-lg shadow-2xl shadow-primary dark:shadow-secondary"
+                                src="https://images.pexels.com/photos/4872076/pexels-photo-4872076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Creative Director" />
+
+                            <div class="mt-2">
+                                <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="text-lg font-medium text-gray-700 dark:text-gray-200">
+                                    Alex
+                                    Jhonson
+                                </h3>
+                                <span data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50"
+                                    class="mt-1 font-medium text-primary dark:text-secondary">Creative
+                                    Director</span>
+                            </div>
+                        </div>
+
+                        <div class="w-full max-w-xs text-center">
+                            <img data-aos="fade-down" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="object-cover object-center w-full h-48 mx-auto rounded-lg shadow-2xl shadow-primary dark:shadow-secondary"
+                                src="https://images.pexels.com/photos/6893896/pexels-photo-6893896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="UX/UI" />
+
+                            <div class="mt-2">
+                                <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="text-lg font-medium text-gray-700 dark:text-gray-200">
+                                    Jordan
+                                    Smith
+                                </h3>
+                                <span data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="mt-1 font-medium text-primary dark:text-secondary">UX/UI
+                                    Specialist</span>
+                            </div>
+                        </div>
+
+                        <div class="w-full max-w-xs text-center">
+                            <img data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="object-cover object-center w-full h-48 mx-auto rounded-lg shadow-2xl shadow-primary dark:shadow-secondary"
+                                src="https://images.pexels.com/photos/8192006/pexels-photo-8192006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Digital Marketing" />
+
+                            <div class="mt-2">
+                                <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="text-lg font-medium text-gray-700 dark:text-gray-200">
+                                    Morgan
+                                    Lee
+                                </h3>
+                                <span data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50"
+                                    class="mt-1 font-medium text-primary dark:text-secondary">Digital
+                                    Marketing Strategist</span>
+                            </div>
+                        </div>
+
+                        <div class="w-full max-w-xs text-center">
+                            <img data-aos="fade-down" data-aos-duration="1700" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50"
+                                class="object-cover object-center w-full h-48 mx-auto rounded-lg shadow-2xl shadow-primary dark:shadow-secondary"
+                                src="https://images.pexels.com/photos/5717550/pexels-photo-5717550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Manager" />
+
+                            <div class="mt-2">
+                                <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="text-lg font-medium text-gray-700 dark:text-gray-200">
+                                    Sarah
+                                    Sechan
+                                </h3>
+                                <span data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="mt-1 font-medium text-primary dark:text-secondary">Client
+                                    Success Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--end team section-->
+
+
+
+        <!--achivement section-->
+        <section
+            class="my-[5%] animated-background bg-gradient-to-r from-primary via-secondary to-primary-hover dark:from-secondary dark:via-primary dark:to-secondary-hover">
+            <div class="container mx-auto max-w-screen-xl py-10 md:py-2 p-8">
+                <div class="my-[6%] mx-auto">
+                    <div class="md:text-center space-y-4">
+                        <h2 data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="text-2xl md:text-4xl font-bold tracking-tight text-light radio-canada-regular">
+                            Building Digital Success With <span class="text-dark">Proven Results</span>
+                        </h2>
+                        <p data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="100"
+                            class="md:text-lg text-sm text-light dark:text-dark max-w-xl pavanam-regular mx-auto">
+                            At Visionix, we pride ourselves on delivering impactful web solutions tailored for diverse
+                            industries. Here’s what we’ve accomplished together with our clients.
+                        </p>
+                    </div>
+                    <!--counter animation-->
+                    <dl
+                        class="mt-10 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+                        <div data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" class="flex flex-col p-8">
+                            <dt class="text-sm font-semibold leading-6 text-light">
+                                Satisfied Clients
+                            </dt>
+                            <dd class="order-first md:text-4xl text-3xl font-bold tracking-tight text-light pavanam-regular counter"
+                                data-end="4000">
+                                0
+                            </dd>
+                        </div>
+                        <div data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" class="flex flex-col p-8">
+                            <dt class="text-sm font-semibold leading-6 text-light">
+                                Websites Launched
+                            </dt>
+                            <dd class="order-first md:text-4xl text-3xl font-bold tracking-tight text-light pavanam-regular counter"
+                                data-end="1500">
+                                0
+                            </dd>
+                        </div>
+                        <div data-aos="fade-down" data-aos-duration="900" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" class="flex flex-col p-8">
+                            <dt class="text-sm font-semibold leading-6 text-light">
+                                Recognitions Earned
+                            </dt>
+                            <dd class="order-first md:text-4xl text-3xl font-bold tracking-tight text-light pavanam-regular counter"
+                                data-end="300">
+                                0
+                            </dd>
+                        </div>
+                        <div data-aos="fade-down" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" class="flex flex-col p-8">
+                            <dt class="text-sm font-semibold leading-6 text-light">
+                                Growth Rate
+                            </dt>
+                            <dd class="order-first md:text-4xl text-3xl font-bold tracking-tight text-light pavanam-regular counter"
+                                data-end="35">
+                                0
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <!--end achivement section-->
+
+        <!--portfolio section-->
+        <section class="my-[4%]">
+            <div class="container mx-auto max-w-screen-xl p-8 py-10 md:py-2">
+                <div class="items-end justify-between sm:flex sm:pe-6 lg:pe-8">
+                    <div class="block gap-4">
+                        <p data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="mb-4  font-medium md:text-xl text-lg text-primary dark:text-secondary radio-canada-regular flex items-center gap-2">
+                            <i class="ri-profile-fill" style="font-size: 2rem;"></i> Our
+                            <span class="text-dark dark:text-light">Portfolio</span>
+                        </p>
+                        <h2 data-aos="fade-down" data-aos-duration="900" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="max-w-xl text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canada-regular">
+                            Explore Our <span class="text-dark dark:text-light">Creative Portfolio</span>
+                        </h2>
+                    </div>
+
+
+                    <div class="mt-8 flex gap-4 lg:mt-0">
+                        <button aria-label="Previous slide" id="keen-slider-previous"
+                            class="rounded-full border border-primary dark:border-secondary p-3 w-12 text-primary dark:text-secondary transition hover:bg-primary dark:hover:bg-secondary hover:text-light dark:hover:text-dark">
+                            <i class="ri-arrow-left-line "></i>
+                        </button>
+
+                        <button aria-label="Next slide" id="keen-slider-next"
+                            class="rounded-full border border-primary dark:border-secondary p-3 w-12 text-primary dark:text-secondary transition hover:bg-primary dark:hover:bg-secondary hover:text-light dark:hover:text-dark">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+                    <div id="keen-slider" class="keen-slider ">
+                        <!-- Portfolio item 1 -->
+                        <div class="keen-slider__slide shadow-extra-large ">
+                            <a href="#" class="group relative block bg-dark flex-1 h-full">
+                                <img alt="Modern Website Design"
+                                    src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+                                <div class="relative p-4 sm:p-6 lg:p-8">
+                                    <p class="text-sm font-extrabold uppercase tracking-widest text-secondary">
+                                        Modern Website Design</p>
+                                    <p class="text-xl font-bold text-light sm:text-2xl">E-Commerce Platform</p>
+
+                                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                                        <div
+                                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                                            <p class="text-sm text-light">
+                                                We designed a modern and user-friendly e-commerce website that enhances
+                                                the shopping
+                                                experience while ensuring seamless functionality.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Portfolio item 2 -->
+                        <div class="keen-slider__slide shadow-2xl ">
+                            <a href="#" class="group relative block bg-dark flex-1 h-full">
+                                <img alt="Creative Branding Campaign"
+                                    src="https://images.pexels.com/photos/3771064/pexels-photo-3771064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+                                <div class="relative p-4 sm:p-6 lg:p-8">
+                                    <p class="text-sm font-extrabold uppercase tracking-widest text-secondary">
+                                        Branding Campaign</p>
+                                    <p class="text-xl font-bold text-light sm:text-2xl">Lifestyle Brand</p>
+
+                                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                                        <div
+                                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                                            <p class="text-sm text-light">
+                                                A creative branding campaign tailored for a lifestyle brand to build a
+                                                strong
+                                                identity and connect with their target audience effectively.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Portfolio item 3 -->
+                        <div class="keen-slider__slide shadow-2xl ">
+                            <a href="#" class="group relative block bg-dark flex-1 h-full">
+                                <img alt="Mobile App Development"
+                                    src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+                                <div class="relative p-4 sm:p-6 lg:p-8">
+                                    <p class="text-sm font-extrabold uppercase tracking-widest text-secondary">
+                                        Mobile App</p>
+                                    <p class="text-xl font-bold text-light sm:text-2xl">On-Demand Services</p>
+
+                                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                                        <div
+                                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                                            <p class="text-sm text-light">
+                                                Developed an intuitive mobile application for on-demand services,
+                                                combining sleek
+                                                design with robust performance.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Portfolio item 4 -->
+                        <div class="keen-slider__slide shadow-2xl ">
+                            <a href="#" class="group relative block bg-dark flex-1 h-full">
+                                <img alt="Social Media Strategy"
+                                    src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+
+                                <div class="relative p-4 sm:p-6 lg:p-8">
+                                    <p class="text-sm font-extrabold uppercase tracking-widest text-secondary">
+                                        Social Media Strategy</p>
+                                    <p class="text-xl font-bold text-light sm:text-2xl">Influencer Collaboration</p>
+
+                                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                                        <div
+                                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                                            <p class="text-sm text-light">
+                                                Crafted a result-oriented social media strategy for influencer
+                                                collaboration to
+                                                amplify brand awareness and engagement.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end portfolio section-->
+
+        <!-- Testimonials Section -->
+        <section class="my-[4%]">
+            <div class="container max-w-screen-xl p-8 py-10 md:py-2 mx-auto">
+                <h2 data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out-back" data-aos-delay="50"
+                    class="mb-4 text-lg font-medium md:text-xl text-primary dark:text-secondary radio-canada-regular flex items-center gap-2">
+                    <i class="ri-customer-service-2-fill" style="font-size: 2rem;"></i> Our
+                    <span class="text-dark dark:text-light">Services</span>
+                </h2>
+                <h1 data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out-back" data-aos-delay="50"
+                    class="text-2xl font-semibold text-primary capitalize md:text-4xl dark:text-secondary radio-canada-regular mb-6 block md:flex gap-3">
+                    Hear from Our <br>
+                    <span class=" text-dark dark:text-light">Satisfied Clients</span>
+                </h1>
+                <div class="lg:-mx-6 lg:flex lg:items-center ">
+                    <img data-aos="flip-right" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50" id="testimonial-image"
+                        class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]"
+                        src="https://images.pexels.com/photos/3184307/pexels-photo-3184307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Client Testimonial">
+
+                    <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                        <p data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" class="text-5xl font-semibold text-primary dark:text-secondary">“</p>
+
+                        <h1 data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" id="testimonial-title"
+                            class="text-2xl font-semibold text-dark dark:text-light lg:text-3xl lg:w-auto">
+                            Our Online Presence Transformed!
+                        </h1>
+
+                        <p data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" id="testimonial-text"
+                            class="max-w-lg  mt-4 text-dark dark:text-muted pavanam-regular text-base md:text-lg">
+                            “ Visionix revamped our outdated website into a modern, responsive platform that truly
+                            represents our brand. Their attention to detail and creative approach brought our vision to
+                            life. We’ve also seen a significant boost in traffic thanks to their SEO strategy. Highly
+                            recommended! ”
+                        </p>
+
+                        <h3 data-aos="fade-down" data-aos-duration="1600" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" id="testimonial-author"
+                            class="mt-6 text-lg font-medium text-primary dark:text-secondary">Emily Carter</h3>
+                        <p data-aos="fade-down" data-aos-duration="1700" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" id="testimonial-position" class="text-dark dark:text-muted">
+                            Founder of Luxe Decor Co.</p>
+
+                        <div class="flex items-center justify-between mt-12 lg:justify-start">
+                            <button data-aos="fade-down" data-aos-duration="1800" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50" id="prev-btn" title="left arrow"
+                                class="p-2 text-dark transition-colors duration-300 border rounded-full rtl:-scale-x-100 border-light dark:border-dark dark:text-light dark:hover:bg-secondary hover:bg-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+
+                            <button data-aos="fade-down" data-aos-duration="1900" data-aos-easing="ease-in-out-back"
+                                data-aos-delay="50" id="next-btn" title="right arrow"
+                                class="p-2 text-dark transition-colors duration-300 border rounded-full rtl:-scale-x-100 border-light dark:border-dark dark:text-light dark:hover:bg-secondary lg:mx-6 hover:bg-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end Testimonials Section -->
+
+        <!-- Blog Section -->
+        <section class="my-[4%]">
+            <div class="container max-w-screen-xl p-8 py-10 md:py-2 mx-auto">
+                <div class="text-center">
+                    <h2 data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="50"
+                        class="mb-4 text-lg font-medium md:text-xl text-primary dark:text-secondary radio-canada-regular flex items-center justify-center gap-2">
+                        <i class="ri-news-fill" style="font-size: 2rem;"></i> Our
+                        <span class="text-dark dark:text-light">Blog</span>
+                    </h2>
+                    <h1 data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out-back"
+                        class="text-2xl font-semibold text-primary capitalize md:text-4xl dark:text-secondary radio-canada-regular">
+                        From Our <span
+                            class="underline decoration-primary dark:decoration-secondary text-dark dark:text-light">Agency
+                            Blog</span>
+                    </h1>
+                    <p data-aos="fade-down" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                        class="max-w-lg mx-auto mt-4 text-dark dark:text-muted pavanam-regular text-base md:text-lg">
+                        Stay informed with insights and trends from our digital strategists. Learn how Visionix can
+                        empower your
+                        brand in the ever-evolving digital world.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 lg:grid-cols-3">
+                    <div data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out-back">
+                        <div class="relative">
+                            <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                                src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Digital Strategy">
+
+                            <div class="absolute bottom-0 flex p-3 bg-primary dark:bg-secondary">
+                                <img class="object-cover object-center w-10 h-10 rounded-full"
+                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+                                    alt="Author">
+
+                                <div class="mx-4">
+                                    <h1 class="text-sm text-light dark:text-dark">Emily Turner</h1>
+                                    <p class="text-sm text-lightmuted dark:text-darkmuted">Digital Marketing Expert</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 h-full">
+                            <h1 class="mt-6 text-xl font-semibold text-dark dark:text-light">
+                                7 Proven Strategies to Enhance Your Online Presence
+                            </h1>
+                            <hr class="w-32 my-6 ">
+                            <p class="text-sm text-dark dark:text-muted">
+                                Discover actionable tips to boost your brand visibility and engagement in the digital
+                                ecosystem.
+                            </p>
+                            <a href="#"
+                                class="inline-block mt-4 text-primary dark:text-secondary underline hover:text-primary-hover dark:hover:text-secondary-hover">Read
+                                more</a>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-down" data-aos-duration="1400" data-aos-easing="ease-in-out-back">
+                        <div class="relative">
+                            <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                                src="https://images.pexels.com/photos/3471423/pexels-photo-3471423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Web Design Trends">
+
+                            <div class="absolute bottom-0 flex p-3 bg-primary dark:bg-secondary">
+                                <img class="object-cover object-center w-10 h-10 rounded-full"
+                                    src="https://images.pexels.com/photos/50855/pexels-photo-50855.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="Author">
+
+                                <div class="mx-4">
+                                    <h1 class="text-sm text-light dark:text-dark">Michael Reed</h1>
+                                    <p class="text-sm text-lightmuted dark:text-darkmuted">UI/UX Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 h-full">
+                            <h1 class="mt-6 text-xl font-semibold text-dark dark:text-light">
+                                Top Web Design Trends for your business
+                            </h1>
+                            <hr class="w-32 my-6 ">
+                            <p class="text-sm text-dark dark:text-muted">
+                                Explore cutting-edge design practices and how they can elevate your website's user
+                                experience.
+                            </p>
+                            <a href="#"
+                                class="inline-block mt-4 text-primary dark:text-secondary underline hover:text-primary-hover dark:hover:text-secondary-hover">Read
+                                more</a>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-down" data-aos-duration="1600" data-aos-easing="ease-in-out-back"
+                        class="md:col-span-2 md:col-start-1 mx-auto lg:col-span-1 lg:col-start-auto">
+                        <div class="relative">
+                            <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                                src="https://images.pexels.com/photos/942331/pexels-photo-942331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="SEO Strategy">
+
+                            <div class="absolute bottom-0 flex p-3 bg-primary dark:bg-secondary">
+                                <img class="object-cover object-center w-10 h-10 rounded-full"
+                                    src="https://images.pexels.com/photos/785667/pexels-photo-785667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Author">
+
+                                <div class="mx-4">
+                                    <h1 class="text-sm text-light dark:text-dark">Sophia Lane</h1>
+                                    <p class="text-sm text-lightmuted dark:text-darkmuted">SEO Strategist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 h-full">
+                            <h1 class="mt-6 text-xl font-semibold text-dark dark:text-light">
+                                How to Master SEO for Your Business
+                            </h1>
+                            <hr class="w-32 my-6 text-primary dark:text-secondary">
+                            <p class="text-sm text-dark dark:text-muted">
+                                Learn the latest SEO techniques to improve your website’s ranking and drive organic
+                                traffic.
+                            </p>
+                            <a href="#"
+                                class="inline-block mt-4 text-primary dark:text-secondary underline hover:text-primary-hover dark:hover:text-secondary-hover">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end blog section -->
+
+        <!--Faq section-->
+        <section class="my-[4%]">
+            <div class="container flex flex-col justify-cente p-8 md:py-10 py-2 mx-auto max-w-screen-xl">
+                <h2 data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out-back"
+                    class="text-2xl font-semibold text-primary capitalize md:text-4xl dark:text-secondary radio-canada-regular mb-4 mx-auto">
+                    Frequently Asked <span class="text-dark dark:text-light">Questions <i
+                            class="ri-questionnaire-fill"></i></span>
+                </h2>
+                <div class="divide-y divide-primary dark:divide-secondary text-dark dark:text-light">
+                    <div class="py-6 space-y-2 md:grid md:grid-cols-12 md:gap-8 md:space-y-0 ">
+                        <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out-back"
+                            class="font-semibold md:col-span-5">
+                            What services does Visionix provide?</h3>
+                        <p data-aos="fade-up" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                            class="md:pl-0 md:col-span-7 dark:text-muted">
+                            Visionix specializes in digital consulting, web design, SEO optimization, and branding
+                            strategies.
+                            We focus on delivering tailored solutions to elevate your online presence.
+                        </p>
+                    </div>
+                    <div class="py-6 space-y-2 md:grid md:grid-cols-12 md:gap-8 md:space-y-0">
+                        <h3 data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                            class="font-semibold md:col-span-5">
+                            How long does it take to complete a project?</h3>
+                        <p data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                            class="md:pl-0 md:col-span-7 dark:text-muted">
+                            Project timelines vary depending on the scope and complexity. Typically, website design
+                            projects
+                            take 4-6 weeks, while comprehensive branding and strategy projects can take up to 8-12
+                            weeks.
+                        </p>
+                    </div>
+                    <div class="py-6 space-y-2 md:grid md:grid-cols-12 md:gap-8 md:space-y-0">
+                        <h3 data-aos="fade-down" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                            class="font-semibold md:col-span-5">
+                            Do you offer ongoing support after project completion?</h3>
+                        <p data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out-back"
+                            class="md:pl-0 md:col-span-7 dark:text-muted">
+                            Yes, Visionix provides ongoing support and maintenance packages. We ensure that your website
+                            or
+                            digital solution runs smoothly and stays updated with the latest industry trends.
+                        </p>
+                    </div>
+                    <div class="py-6 space-y-2 md:grid md:grid-cols-12 md:gap-8 md:space-y-0">
+                        <h3 data-aos="fade-down" data-aos-duration="1600" data-aos-easing="ease-in-out-back"
+                            class="font-semibold md:col-span-5">
+                            How much do your services cost?</h3>
+                        <p data-aos="fade-up" data-aos-duration="1700" data-aos-easing="ease-in-out-back"
+                            class="md:pl-0 md:col-span-7 dark:text-muted">
+                            Our pricing depends on the project requirements and scope. We offer customized packages
+                            tailored
+                            to your specific needs. Contact us for a detailed consultation and quote.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end Faq section-->
+
+        <!--cta section-->
+        <section class="my-[4%]">
+            <div class="container mx-auto max-w-screen-xl p-8 ">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back"
+                    data-aos-delay="150">
+                    <p class="font-medium text-lg md:text-xl text-primary dark:text-secondary ">Contact us</p>
+
+                    <h1
+                        class="mt-2 text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canada-regular">
+                        Get in touch</h1>
+
+                    <p class="mt-3 text-dark dark:text-muted text-base md:text-lg pavanam-regular">Our friendly team
+                        would
+                        love to hear from you.</p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
+                    <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1 pavanam-regular">
+                        <div data-aos="flip-up" data-aos-duration="1100" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="150">
+                            <span class="inline-block p-3 text-xl text-primary dark:text-secondary rounded-full ">
+                                <i class="ri-mail-send-fill "></i>
+                            </span>
+
+                            <h2 class="mt-4  font-bold text-base md:text-lg text-dark dark:text-light">Email</h2>
+                            <p class="mt-2 text-md text-dark dark:text-muted">Our friendly team is here to help.
+                            </p>
+                            <p class="mt-2 text-md text-primary dark:text-secondary ">info@agency.com</p>
+                        </div>
+
+                        <div data-aos="flip-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="150">
+                            <span class="inline-block p-3 text-xl text-primary dark:text-secondary rounded-full ">
+                                <i class="ri-map-pin-2-fill"></i>
+                            </span>
+
+                            <h2 class="mt-4  font-bold text-base md:text-lg text-dark dark:text-light">Office</h2>
+                            <p class="mt-2 text-md text-dark dark:text-muted">Come say hello at our office HQ.
+                            </p>
+                            <p class="mt-2 text-md text-primary dark:text-secondary ">100 Smith Street Collingwood VIC
+                                3066 AU</p>
+                        </div>
+
+                        <div data-aos="flip-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="150">
+                            <span class="inline-block p-3 text-xl text-primary dark:text-secondary rounded-full ">
+                                <i class="ri-phone-fill"></i>
+                            </span>
+
+                            <h2 class="mt-4  font-bold text-base md:text-lg text-dark dark:text-light">Phone</h2>
+                            <p class="mt-2 text-md text-dark dark:text-muted">Mon-Fri from 8am to 5pm.</p>
+                            <p class="mt-2 text-md text-primary dark:text-secondary ">+1 (555) 000-0000</p>
+                        </div>
+                        <div data-aos="flip-up" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="150">
+                            <span class="inline-block p-3 text-xl text-primary dark:text-secondary rounded-full ">
+                                <i class="ri-instagram-fill"></i>
+                            </span>
+
+                            <h2 class="mt-4  font-bold text-base md:text-lg text-dark dark:text-light">Instagram</h2>
+                            <p class="mt-2 text-md text-dark dark:text-muted">Come say hellp at our social media</p>
+                            <p class="mt-2 text-md text-primary dark:text-secondary ">Example Agency</p>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-in-out-back"
+                        data-aos-delay="150"
+                        class="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto shadow-large shadow-primary dark:shadow-secondary">
+                        <iframe width="100%" height="100%" frameborder="0" title="map" marginheight="0" marginwidth="0"
+                            scrolling="no"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76448.75661182322!2d144.9385810995675!3d-37.805593541409785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642e0ab25c14b%3A0xc09a0eb2e92206ff!2s100%20Smith%20St%2C%20Collingwood%20VIC%203066%2C%20Australia!5e0!3m2!1sid!2sid!4v1740487380912!5m2!1sid!2sid"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end cta section-->
+
+        <!-- Footer -->
+        <footer class="shadow-extra-large shadow-primary dark:shadow-secondary">
+            <!-- Container for footer content -->
+            <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2">
+                    <!-- Left section -->
+                    <div
+                        class="py-8 lg:order-last lg:border-b-0 lg:border-s border-light dark:border-dark lg:py-16 lg:ps-16">
+                        <!-- Logo (Mobile only) -->
+                        <div class="mt-8 space-y-4 lg:mt-0">
+                            <div class="block  lg:hidden">
+                                <a href="../../index.html">
+                                    <img src="../../images/logo.png" alt="Logo" class="h-28 w-auto">
+                                </a>
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-medium text-primary dark:text-secondary">
+                                    Discover <span class="text-dark dark:text-light">the Best Solutions</span>
+                                </h2>
+                                <p class="mt-4 max-w-lg text-dark dark:text-muted">
+                                    At Visionix, we are dedicated to delivering innovative and reliable solutions
+                                    tailored to your needs. Contact us for more information or schedule a consultation
+                                    to elevate your brand with cutting-edge technology.
+                                </p>
+                            </div>
+                            <!-- Social Media Links -->
+                            <div class="mt-6 flex gap-4">
+                                <a href="#"
+                                    class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a href="#"
+                                    class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                                    <i class="ri-instagram-fill"></i>
+                                </a>
+                                <a href="#"
+                                    class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                                <a href="#"
+                                    class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                                    <i class="ri-youtube-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right section-->
+                    <div class="py-8 lg:py-16 lg:pe-16">
+                        <div class="hidden lg:text-3xl font-semibold radio-canada-regular lg:block">
+                            <a href="../../index.html">
+                                <img src="../../images/logo.png" alt="Logo" class="h-28 w-auto">
+                            </a>
+                        </div>
+                        <!-- Links section -->
+                        <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
+                            <div>
+                                <p class="font-medium text-primary dark:text-secondary">Legal & Press</p>
+                                <ul class="mt-6 space-y-4 text-sm">
+                                    <li><a href="#"
+                                            class="text-dark dark:text-muted transition hover:opacity-75">Privacy
+                                            Policy</a></li>
+                                    <li><a href="#"
+                                            class="text-dark dark:text-muted transition hover:opacity-75">Presskit</a>
+                                    </li>
+                                    <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Terms
+                                            & Conditions</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-medium text-primary dark:text-secondary">Company</p>
+                                <ul class="mt-6 space-y-4 text-sm">
+                                    <li><a href="#"
+                                            class="text-dark dark:text-muted transition hover:opacity-75">About</a></li>
+                                    <li><a href="#"
+                                            class="text-dark dark:text-muted transition hover:opacity-75">Services</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="text-dark dark:text-muted transition hover:opacity-75">Portfolio</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="text-dark dark:text-muted transition hover:opacity-75">Blog</a></li>
+                                    <li><a href="#"
+                                            class="text-dark dark:text-muted transition hover:opacity-75">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-medium text-primary dark:text-secondary">Helpful Links</p>
+                                <ul class="mt-6 space-y-4 text-sm">
+                                    <li><a href="#"
+                                            class="text-dark dark:text-muted transition hover:opacity-75">Contact</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="text-dark dark:text-muted transition hover:opacity-75">Documentation</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer bottom: Terms and copyright -->
+                        <div class="mt-8 border-t border-light dark:border-dark pt-8">
+                            <ul class="flex flex-wrap gap-4 text-lg">
+                                <li><a href="#" class="text-darkmuted dark:text-light transition hover:opacity-75">Terms
+                                        & Conditions</a></li>
+                                <li><a href="#"
+                                        class="text-darkmuted dark:text-light transition hover:opacity-75">Privacy
+                                        Policy</a></li>
+                                <li><a href="#"
+                                        class="text-darkmuted dark:text-light transition hover:opacity-75">Cookies</a>
+                                </li>
+                            </ul>
+                            <p class="mt-8 text-lgs text-darkmuted dark:text-light">&copy; 2025 Visionix. All rights
+                                reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </main>
+    <!--main custom js-->
+    <script src="../../js/main.js"></script>
+
+    <!--flowbite js-->
+    <script src="../../js/flowbite.min.js"></script>
+    <!--aos js-->
+    <script src="../../js/aos.js"></script>
+
+    <script>
+        // aos scirpt init
+        AOS.init();
+    </script>
+
+    <script type="module">
+        //keenslider script for portfolio section
+        import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+
+        const keenSlider = new KeenSlider(
+            '#keen-slider',
+            {
+                loop: true,
+                slides: {
+                    origin: 'center',
+                    perView: 1.25,
+                    spacing: 16,
+                },
+                breakpoints: {
+                    '(min-width: 1024px)': {
+                        slides: {
+                            origin: 'auto',
+                            perView: 2.5,
+                            spacing: 32,
+                        },
+                    },
+                },
+            },
+            []
+        )
+
+        const keenSliderPrevious = document.getElementById('keen-slider-previous')
+        const keenSliderNext = document.getElementById('keen-slider-next')
+
+        keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
+        keenSliderNext.addEventListener('click', () => keenSlider.next())
+
+
+
+        //testimonials carousel 
+        const testimonials = [
+            {
+                image: 'https://images.pexels.com/photos/3776201/pexels-photo-3776201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+                title: 'Boosted Our Business Efficiency',
+                text: '“ Thanks to the expert consultation from Visionix, our team has seen a significant increase in productivity and streamlined operations. Their strategic advice was exactly what we needed to scale our business. ”',
+                author: 'Jane Smith',
+                position: 'Operations Manager at Stech'
+            },
+            {
+                image: 'https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+                title: 'Outstanding Strategic Planning',
+                text: '“ Visionix provided us with a comprehensive market analysis and a clear roadmap to growth. Their insights into our industry were invaluable, and we’ve seen tangible results since implementing their strategies. ”',
+                author: 'John Doe',
+                position: 'CEO at Example Inc'
+            },
+            {
+                image: 'https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg',
+                title: 'Expert Guidance and Support',
+                text: '“ The consultants at Visionix were professional, knowledgeable, and always available to provide guidance. Their tailored solutions helped us navigate complex challenges and achieve our business goals. ”',
+                author: 'Carl Johnson',
+                position: 'CTO at TechnoSoft'
+            }
+        ];
+
+        let currentIndex = 0;
+
+        const imageElement = document.getElementById('testimonial-image');
+        const titleElement = document.getElementById('testimonial-title');
+        const textElement = document.getElementById('testimonial-text');
+        const authorElement = document.getElementById('testimonial-author');
+        const positionElement = document.getElementById('testimonial-position');
+
+        document.getElementById('next-btn').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            updateTestimonial();
+        });
+
+        document.getElementById('prev-btn').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+            updateTestimonial();
+        });
+        function updateTestimonial() {
+            const testimonial = testimonials[currentIndex];
+            console.log('Updating to testimonial:', testimonial);
+            imageElement.src = testimonial.image;
+            titleElement.textContent = testimonial.title;
+            textElement.textContent = testimonial.text;
+            authorElement.textContent = testimonial.author;
+            positionElement.textContent = testimonial.position;
+        }
+     
+        // ---------------------------------- //
+
+    </script>
+</body>
+
+</html>

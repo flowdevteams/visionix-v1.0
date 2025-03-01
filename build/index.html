@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--tailwind css-->
+  <link href="./css/output.css" rel="stylesheet">
+  <!--main custom css-->
+  <link href="./css/main.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <!--remix icon css-->
+  <link href="./remixicon/fonts/remixicon.css" rel="stylesheet">
+  <!--flowbite css-->
+  <link href="./css/flowbite.min.css" rel="stylesheet">
+  <!--aos css-->
+  <link href="./css/aos.css" rel="stylesheet">
+
+</head>
+
+
+<body class="bg-light dark:bg-dark transition-colors ease-in-out delay-100 duration-500">
+
+  <!--loader-->
+  <div id="loader">
+    <svg class="h-20 w-20 animate-spin stroke-dark dark:stroke-light" viewBox="0 0 256 256">
+      <line x1="128" y1="32" x2="128" y2="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="195.9" y1="60.1" x2="173.3" y2="82.7" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="224" y1="128" x2="192" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="195.9" y1="195.9" x2="173.3" y2="173.3" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="24"></line>
+      <line x1="128" y1="224" x2="128" y2="192" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="60.1" y1="195.9" x2="82.7" y2="173.3" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="32" y1="128" x2="64" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+      <line x1="60.1" y1="60.1" x2="82.7" y2="82.7" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+      </line>
+    </svg>
+    <p class="md:text-5xl text-4xl font-semibold text-dark dark:text-light radio-canada-regular">Visio<span
+        class="text-primary dark:text-secondary">Nix</span> </p>
+  </div>
+  <!--end loader-->
+  <main id="content">
+    <!--header-->
+    <header
+      class="bg-light dark:bg-dark w-full  transition-colors ease-in-out delay-75 duration-300 shadow-large shadow-primary dark:shadow-secondary p-2 fixed top-0 z-50  bg-opacity-70 backdrop-blur">
+      <div class="mx-auto px-6 lg:px-8 ">
+        <div class="flex h-16 items-center justify-between  max-w-screen-xl mx-auto">
+          <div class="relative">
+            <a href="#">
+              <img src="./images/logo.png" alt="Logo" class="h-28 w-auto">
+          </a>
+          </div>
+          <div class="md:flex md:items-center md:gap-12 mx-auto">
+            <nav aria-label="Global" class="hidden xl:block">
+              <ul class="flex items-center gap-8 text-sm">
+
+                <!-- Home -->
+                <li class="relative group">
+                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 "
+                    href="#home">Home</a>
+                </li>
+                <!-- Demo-->
+                <li class="relative group">
+                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                    href="#demo">Demo</a>
+                </li>
+                <!-- Features-->
+                <li class="relative group">
+                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                    href="#features">Features</a>
+                </li>
+                <!-- Documentation-->
+                <li class="relative group">
+                  <a class="text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary text-lg font-medium dropdown-button after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary dark:after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300"
+                    href="./docs/documentation.html">Docs</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!--download  button-->
+          <a class="hidden xl:block rounded-3xl bg-primary dark:bg-secondary md:px-8 py-2.5 px-4 text-md font-medium text-light dark:text-dark items-center gap-1 transition ease-in-out delay-150 hover:shadow-small hover:shadow-primary dark:shadow-secondary hover:text-light dark:hover:text-dark hover:bg-primary-hover dark:hover:bg-secondary-hover duration-300"
+            href="#">
+            Download
+            <i class="ri-arrow-down-line"></i>
+          </a>
+
+          <!-- Button to toggle between dark and light mode -->
+          <div class="flex items-center gap-4">
+            <div class="flex sm:gap-4">
+              <button onclick="toggleDarkMode()" class="p-2 text-primary dark:text-secondary">
+                <i id="dark-mode-icon" class="ri-sun-line text-2xl"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Toggle Button -->
+           <div class="block xl:hidden">
+            <button id="menu-button"
+                class="rounded  p-2 text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary"
+                type="button" data-drawer-target="drawer-body-scrolling" data-drawer-show="drawer-body-scrolling" data-drawer-body-scrolling="true" aria-controls="drawer-body-scrolling">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!--Mobile Menu -->
+        <div>
+            <!-- drawer  -->
+            <div id="drawer-body-scrolling"
+                class="fixed top-0 left-0 z-40 h-screen  p-4 overflow-y-auto transition-transform -translate-x-full bg-light w-64 dark:bg-dark"
+                tabindex="-1" aria-labelledby="drawer-body-scrolling-label">
+                <h5  id="drawer-body-scrolling-label"
+                    class="text-base font-semibold text-primary uppercase dark:text-secondary">
+                    MENU
+                </h5>
+                <!-- Close Button for Mobile Menu -->
+                <button type="button" data-drawer-hide="drawer-body-scrolling" aria-controls="drawer-body-scrolling"
+                    class="text-dark bg-transparent hover:bg-light hover:text-dark rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-dark dark:hover:text-light">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Close
+                        menu</span>
+                </button>
+              <div class="py-4 overflow-y-auto">
+                <ul class="space-y-2 font-medium">
+
+
+                  <!--home-->
+                  <li>
+                    <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                      href="#home">
+                      <i
+                        class="ri-home-2-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                        class="ms-3">Home</span>
+                    </a>
+                  </li>
+                  <!--Demo-->
+                  <li>
+                    <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                      href="#demo">
+                      <i
+                        class="ri-account-pin-box-line text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                        class="ms-3">Demo</span>
+                    </a>
+                  </li>
+                  <!--Features-->
+                  <li>
+                    <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                      href="#features">
+                      <i
+                        class="ri-puzzle-2-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                        class="ms-3">Features</span>
+                    </a>
+                  </li>
+                  <!--Documentation-->
+                  <li>
+                    <a class="flex items-center w-full p-2 text-base text-dark hover:text-light transition duration-75 rounded-lg group hover:bg-primary dark:text-light dark:hover:text-dark dark:hover:bg-secondary"
+                      href="./docs/documentation.html">
+                      <i
+                        class="ri-article-fill text-primary dark:text-secondary group-hover:text-light dark:group-hover:text-dark"></i><span
+                        class="ms-3">Docs</span>
+                    </a>
+                  </li>
+
+                  <hr class="mb-6">
+                  <!--donwload and docs link-->
+                  <li class="flex items-center gap-4  p-2">
+                    <div>
+                      <p class=" mb-6">
+                        <a href="#"
+                          class="inline-flex items-center font-medium text-primary dark:text-secondary  hover:underline">
+                          Download
+                          <i class="ri-arrow-down-line text-primary dark:text-secondary ms-3"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--end drawer-->
+          </div>
+          <!--end mobile menu-->
+        </div>
+      </div>
+      </div>
+      </div>
+      <!--scroll progress bar-->
+      <div id="scroll-progress" class="bg-primary dark:bg-secondary h-1 top-0 fixed left-0 z-50"></div>
+    </header>
+    <!--end header-->
+    <!--back to top button-->
+    <button id="back-to-top"
+      class="hidden fixed bottom-5 right-5 bg-primary dark:bg-secondary text-light dark:text-dark rounded-full w-16 h-16 p-2 transition ease-in-out delay-75 duration-200 hover:bg-primary-hover dark:hover:bg-secondary-hover hover:shadow-large dark:hover:shadow-secondary hover:shadow-primary hover:scale-105">
+      <i class="ri-arrow-up-line" style="font-size: 2rem"></i>
+    </button>
+
+    <!-- Home Section -->
+    <section id="home"
+      class=" animated-background bg-gradient-to-r from-primary via-secondary to-primary-hover dark:from-secondary dark:via-primary dark:to-secondary-hover z-[-1]">
+      <div class="container mx-auto max-w-screen-xl px-4 py-32 flex h-screen items-center relative">
+        <div class="flex flex-col mx-auto relative">
+          <div class="mx-auto text-center text-dark dark:text-light radio-canada-regular">
+            <p class="text-xl lg:text-2xl font-bold"><i class="ri-edit-box-fill mr-3"></i>V 1.0</p>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" data-aos-delay="50"
+              class="text-3xl md:text-5xl font-bold lg:text-6xl mt-4">
+              <span class="text-light dark:text-dark">Visionix </span> - Agency Landing Template
+            </h1>
+            <p class="text-base md:text-lg lg:text-xl font-medium md:font-semibold mt-6 max-w-2xl mx-auto">
+              The Make your website or web application perfect starting point for your next project and the ultimate
+              resource for learning how experts build real websites with Tailwind CSS.
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back" data-aos-delay="200"
+            class="mt-8 block mx-auto md:flex md:justify-center md:space-x-4">
+            <div>
+              <a href="#demo"
+                class="px-5 py-2.5 text-base md:text-lg font-semibold text-light dark:text-dark transition ease-in-out delay-75 duration-200 hover:-translate-y-1 hover:scale-100 hover:shadow-large hover:shadow-secondary dark:hover:shadow-primary bg-primary rounded-xl hover:bg-primary-hover dark:bg-secondary dark:hover:bg-secondary-hover">
+                <i class="ri-pages-fill mr-1"></i>Launch Demo
+              </a>
+            </div>
+            <div class="mt-6 md:mt-0">
+              <a href="#"
+                class="px-5 py-2.5 text-base md:text-lg font-semibold text-dark dark:text-light transition ease-in-out delay-75 duration-200 hover:-translate-y-1 hover:scale-100 hover:shadow-large hover:shadow-light dark:hover:shadow-dark bg-light dark:bg-dark rounded-xl hover:bg-lightmuted dark:hover:bg-darkmuted">
+                <i class="ri-money-dollar-box-line mr-1"></i>Buy Template
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end home section-->
+
+
+    <!--demo section-->
+    <section id="demo" class="my-[4%]">
+      <div class="container mx-auto max-w-screen-xl p-8 py-10 md:py-2">
+        <header class="text-center">
+          <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out-back" data-aos-delay="50"
+            class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canada-regular">
+            <i class="ri-artboard-fill mr-3"></i>Landing<span class="text-dark dark:text-light"> Demo</span>
+          </h2>
+          <p data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out-back" data-aos-delay="100"
+            class="mt-4  max-w-2xl mx-auto  text-dark dark:text-muted pavanam-regular text-lg md:text-xl">
+            Elevate Your Presence: Unveiling the Power of Our Demo!
+          </p>
+         
+        </header>
+        <!--landing demo-->
+        <div class="mt-12  grid gap-12 grid-cols-1 md:grid-cols-2  lg:grid-cols-3 pavanam-regular">
+          <!-- Demo 1 -->
+          <div data-aos="flip-down" data-aos-duration="1100" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class=" w-full bg-light rounded-lg shadow-large shadow-primary dark:shadow-secondary overflow-hidden dark:bg-dark">
+              <div>
+                <img class="object-cover h-72 w-full" src="./images/demo/home.png" alt="Agency-Home" />
+              </div>
+
+              <div class="flex flex-col gap-1 mt-4 px-4 text-lg md:text-xl">
+                <h2 class=" font-semibold text-primary dark:text-secondary">Agency</h2>
+                <span class="font-normal text-dark dark:text-light">Home Page</span>
+              </div>
+
+              <div class="mt-4 p-4 border-t border-primary dark:border-secondary">
+                <a href="./themes/agency/home.html"
+                  class="w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-dark dark:text-light">
+                  <span class="text-base">Live Preview</span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!--demo 2-->
+          <div data-aos="flip-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class=" w-full bg-light rounded-lg shadow-large shadow-primary dark:shadow-secondary overflow-hidden dark:bg-dark">
+              <div>
+                <img class="object-cover h-72 w-full" src="./images/demo/about.png" alt="Agency-About" />
+              </div>
+
+              <div class="flex flex-col gap-1 mt-4 px-4 text-lg md:text-xl">
+                <h2 class=" font-semibold text-primary dark:text-secondary">Agency</h2>
+                <span class="font-normal text-dark dark:text-light">About Page</span>
+              </div>
+
+              <div class="mt-4 p-4 border-t border-primary dark:border-secondary">
+                <a href="./themes/agency/about.html"
+                  class="w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-dark dark:text-light">
+                  <span class="text-base">Live Preview</span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--demo 3-->
+          <div data-aos="flip-down" data-aos-duration="1300" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class=" w-full bg-light rounded-lg shadow-large shadow-primary dark:shadow-secondary overflow-hidden dark:bg-dark">
+              <div>
+                <img class="object-cover h-72 w-full" src="./images/demo/services.png"
+                  alt="Agency-services" />
+              </div>
+
+              <div class="flex flex-col gap-1 mt-4 px-4 text-lg md:text-xl">
+                <h2 class=" font-semibold text-primary dark:text-secondary">Agency</h2>
+                <span class="font-normal text-dark dark:text-light">Services Page</span>
+              </div>
+
+              <div class="mt-4 p-4 border-t border-primary dark:border-secondary">
+                <a href="./themes/agency/services.html"
+                  class="w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-dark dark:text-light">
+                  <span class="text-base">Live Preview</span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--demo 4-->
+          <div data-aos="flip-down" data-aos-duration="1400" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class=" w-full bg-light rounded-lg shadow-large shadow-primary dark:shadow-secondary overflow-hidden dark:bg-dark">
+              <div>
+                <img class="object-cover h-72 w-full" src="./images/demo/blog.png" alt="Agency-Blog" />
+              </div>
+
+              <div class="flex flex-col gap-1 mt-4 px-4 text-lg md:text-xl">
+                <h2 class=" font-semibold text-primary dark:text-secondary">Agency</h2>
+                <span class="font-normal text-dark dark:text-light">Blog Page</span>
+              </div>
+
+              <div class="mt-4 p-4 border-t border-primary dark:border-secondary">
+                <a href="./themes/agency/blog.html"
+                  class="w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-dark dark:text-light">
+                  <span class="text-base">Live Preview</span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--demo 5-->
+          <div data-aos="flip-up" data-aos-duration="1500" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class=" w-full bg-light rounded-lg shadow-large shadow-primary dark:shadow-secondary overflow-hidden dark:bg-dark">
+              <div>
+                <img class="object-cover h-72 w-full" src="./images/demo/portfolio.png"
+                  alt="Agency-Portfolio" />
+              </div>
+
+              <div class="flex flex-col gap-1 mt-4 px-4 text-lg md:text-xl">
+                <h2 class=" font-semibold text-primary dark:text-secondary">Agency</h2>
+                <span class="font-normal text-dark dark:text-light">Portfolio Page</span>
+              </div>
+
+              <div class="mt-4 p-4 border-t border-primary dark:border-secondary">
+                <a href="./themes/agency/portfolio.html"
+                  class="w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-dark dark:text-light">
+                  <span class="text-base">Live Preview</span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--demo 6-->
+          <div data-aos="flip-down" data-aos-duration="1600" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class=" w-full bg-light rounded-lg shadow-large shadow-primary dark:shadow-secondary overflow-hidden dark:bg-dark">
+              <div>
+                <img class="object-cover h-72 w-full" src="./images/demo/contact.png"
+                  alt="Agency-Contact" />
+              </div>
+
+              <div class="flex flex-col gap-1 mt-4 px-4 text-lg md:text-xl">
+                <h2 class=" font-semibold text-primary dark:text-secondary">Agency</h2>
+                <span class="font-normal text-dark dark:text-light">Contact Page</span>
+              </div>
+
+              <div class="mt-4 p-4 border-t border-primary dark:border-secondary">
+                <a href="./themes/agency/contact.html"
+                  class="w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-dark dark:text-light">
+                  <span class="text-base">Live Preview</span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end landing demo-->
+
+        <!--security demo-->
+        <header class="text-center mt-10">
+          <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out-back" data-aos-delay="50"
+            class="text-2xl font-bold md:text-4xl text-primary dark:text-secondary radio-canada-regular">
+            <i class="ri-artboard-fill mr-3"></i>Security<span class="text-dark dark:text-light"> Demo</span>
+          </h2>
+          <p data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out-back" data-aos-delay="100"
+            class="mt-4 max-w-2xl mx-auto  text-dark dark:text-muted pavanam-regular text-lg md:text-xl">
+            serves as the perfect starting point for your next project, showcasing the expertise in building real
+            websites with Tailwind CSS.
+          </p>
+        </header>
+        <div class="mt-12  grid gap-12 grid-cols-1 md:grid-cols-2   pavanam-regular">
+          <!--Sign In Form Demo -->
+          <div data-aos="flip-down" data-aos-duration="1100" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class=" w-full bg-light rounded-lg shadow-large shadow-primary dark:shadow-secondary overflow-hidden dark:bg-dark">
+              <div>
+                <img class="object-cover h-72 w-full" src="./images/demo/signin.png" alt="signin-form" />
+              </div>
+
+              <div class="flex flex-col gap-1 mt-4 px-4 text-lg md:text-xl">
+                <h2 class=" font-semibold text-primary dark:text-secondary">Sign In</h2>
+                <span class="font-normal text-dark dark:text-light">Form</span>
+              </div>
+
+              <div class="mt-4 p-4 border-t border-primary dark:border-secondary">
+                <a href="./themes/auth/signin.html"
+                  class="w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-dark dark:text-light">
+                  <span class="text-base">Live Preview</span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Sign Up Form Demo-->
+          <div data-aos="flip-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class=" w-full bg-light rounded-lg shadow-large shadow-primary dark:shadow-secondary overflow-hidden dark:bg-dark">
+              <div>
+                <img class="object-cover h-72 w-full" src="./images/demo/signup.png" alt="signup-form" />
+              </div>
+
+              <div class="flex flex-col gap-1 mt-4 px-4 text-lg md:text-xl">
+                <h2 class=" font-semibold text-primary dark:text-secondary">Sign Up</h2>
+                <span class="font-normal text-dark dark:text-light">Form</span>
+              </div>
+
+              <div class="mt-4 p-4 border-t border-primary dark:border-secondary">
+                <a href="./themes/auth/signup.html"
+                  class="w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-dark dark:text-light">
+                  <span class="text-base">Live Preview</span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Forgot Password Form Demo-->
+          <div data-aos="flip-down" data-aos-duration="1300" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class=" w-full bg-light rounded-lg shadow-large shadow-primary dark:shadow-secondary overflow-hidden dark:bg-dark">
+              <div>
+                <img class="object-cover h-72 w-full" src="./images/demo/forgotpass.png"
+                  alt="forgotpassword-form" />
+              </div>
+
+              <div class="flex flex-col gap-1 mt-4 px-4 text-lg md:text-xl">
+                <h2 class=" font-semibold text-primary dark:text-secondary">Forgot Password</h2>
+                <span class="font-normal text-dark dark:text-light">Form</span>
+              </div>
+
+              <div class="mt-4 p-4 border-t border-primary dark:border-secondary">
+                <a href="./themes/auth/forgotpassword.html"
+                  class="w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-dark dark:text-light">
+                  <span class="text-base">Live Preview</span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Reset Password Form Demo-->
+          <div data-aos="flip-down" data-aos-duration="1400" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class=" w-full bg-light rounded-lg shadow-large shadow-primary dark:shadow-secondary overflow-hidden dark:bg-dark">
+              <div>
+                <img class="object-cover h-72 w-full" src="./images/demo/resetpass.png"
+                  alt="resetpassword-form" />
+              </div>
+
+              <div class="flex flex-col gap-1 mt-4 px-4 text-lg md:text-xl">
+                <h2 class=" font-semibold text-primary dark:text-secondary">Reset Password</h2>
+                <span class="font-normal text-dark dark:text-light">Form</span>
+              </div>
+              <div class="mt-4 p-4 border-t border-primary dark:border-secondary">
+                <a href="./themes/auth/resetpassword.html"
+                  class="w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-dark dark:text-light">
+                  <span class="text-base">Live Preview</span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end security demo-->
+      </div>
+    </section>
+    <!--end demo section-->
+
+    <!--features section-->
+    <section id="features" class="my-[5%]">
+      <div class="container mx-auto max-w-screen-xl py-10 md:py-2 p-8 ">
+        <div class="mb-10 ">
+          <h2 data-aos="fade-down" data-aos-duration="900" data-aos-easing="ease-in-out-back" data-aos-delay="50"
+            class="md:text-4xl text-2xl text-primary dark:text-secondary text-center radio-canada-regular font-bold ">
+            <i class="ri-function-add-fill mr-3"></i>Awesome Template
+            <span class="text-dark dark:text-light"> Features</span>
+          </h2>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pavanam-regular">
+          <!-- Features 1-->
+          <div data-aos="flip-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class="flex-1 h-full max-w-2xl group relative cursor-pointer overflow-hidden bg-light dark:bg-dark px-6 pt-10 pb-8 shadow-large shadow-primary dark:shadow-secondary transition-all duration-300 hover:-translate-y-1 hover:bg-primary/90 dark:hover:bg-secondary/90 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+              <div class="relative z-10  max-w-md">
+                <div class="block gap-5">
+                  <span
+                    class="grid h-20 w-20 place-items-center mx-auto rounded-full bg-primary dark:bg-secondary transition-all duration-300 group-hover:bg-primary-hover dark:group-hover:bg-secondary-hover">
+                    <i class="ri-tailwind-css-fill text-light dark:text-dark text-4xl"></i>
+                  </span>
+                  <p
+                    class="mt-4 mb-4 text-lg md:text-xl text-center text-dark dark:text-light font-semibold group-hover:text-light/90 dark:group-hover:text-dark transition-all duration-500">
+                    Built With Tailwind CSS
+                  </p>
+                </div>
+                <div
+                  class="space-y-6 text-center text-base md:text-lg leading-7 text-dark dark:text-light transition-all duration-300 group-hover:text-light/90 dark:group-hover:text-dark">
+                  <p>Rapidly build modern websites without ever leaving your HTML.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Features 2-->
+          <div data-aos="flip-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class="flex-1 h-full max-w-2xl group relative cursor-pointer overflow-hidden bg-light dark:bg-dark px-6 pt-10 pb-8 shadow-large shadow-primary dark:shadow-secondary transition-all duration-300 hover:-translate-y-1 hover:bg-primary/90 dark:hover:bg-secondary/90 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+              <div class="relative z-10  max-w-md">
+                <div class="block gap-5">
+                  <span
+                    class="grid h-20 w-20 place-items-center mx-auto rounded-full bg-primary dark:bg-secondary transition-all duration-300 group-hover:bg-primary-hover dark:group-hover:bg-secondary-hover">
+                    <i class="ri-computer-fill text-light dark:text-dark text-4xl"></i>
+                  </span>
+                  <p
+                    class="mt-4 mb-4 text-lg md:text-xl text-center text-dark dark:text-light font-semibold group-hover:text-light/90 dark:group-hover:text-dark transition-all duration-500">
+                    Ultra Responsive</p>
+                </div>
+                <div
+                  class="space-y-6 text-center text-base md:text-lg leading-7 text-dark dark:text-light transition-all duration-300 group-hover:text-light/90 dark:group-hover:text-dark">
+                  <p>Our fully Responsive design ensures your content is beautifully presented no matter what device
+                    your audience is using.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Features 3-->
+          <div data-aos="flip-up" data-aos-duration="1300" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class="flex-1 h-full max-w-2xl group relative cursor-pointer overflow-hidden bg-light dark:bg-dark px-6 pt-10 pb-8 shadow-large shadow-primary dark:shadow-secondary transition-all duration-300 hover:-translate-y-1 hover:bg-primary/90 dark:hover:bg-secondary/90 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+              <div class="relative z-10  max-w-md">
+                <div class="block gap-5">
+                  <span
+                    class="grid h-20 w-20 place-items-center mx-auto  rounded-full bg-primary dark:bg-secondary transition-all duration-300 group-hover:bg-primary-hover dark:group-hover:bg-secondary-hover">
+                    <i class="ri-sun-fill text-light dark:text-dark text-4xl"></i></i>
+                  </span>
+                  <p
+                    class="mt-4 mb-4 text-lg md:text-xl text-center text-dark dark:text-light font-semibold group-hover:text-light/90 dark:group-hover:text-dark transition-all duration-500">
+                    Dark Mode Suport</p>
+                </div>
+                <div
+                  class="space-y-6 text-center text-base md:text-lg leading-7 text-dark dark:text-light transition-all duration-300 group-hover:text-light/90 dark:group-hover:text-dark">
+                  <p>Embark on a Rich Experience: Unveiling a Host of Advanced Features within Our Dark Mode Support
+                    Environment.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Features 4-->
+          <div data-aos="flip-up" data-aos-duration="1400" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class="flex-1 h-full max-w-2xl group relative cursor-pointer overflow-hidden bg-light dark:bg-dark px-6 pt-10 pb-8 shadow-large shadow-primary dark:shadow-secondary transition-all duration-300 hover:-translate-y-1 hover:bg-primary/90 dark:hover:bg-secondary/90 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+
+              <div class="relative z-10  max-w-md">
+                <div class="block gap-5">
+                  <span
+                    class="grid h-20 w-20 place-items-center mx-auto  rounded-full bg-primary dark:bg-secondary transition-all duration-300 group-hover:bg-primary-hover dark:group-hover:bg-secondary-hover">
+                    <i class="ri-arrow-up-box-fill text-light dark:text-dark text-4xl"></i>
+                  </span>
+                  <p
+                    class="mt-4 mb-4 text-lg md:text-xl text-center text-dark dark:text-light font-semibold group-hover:text-light/90 dark:group-hover:text-dark transition-all duration-500">
+                    Production Ready</p>
+                </div>
+                <div
+                  class="space-y-6 text-center text-base md:text-lg leading-7 text-dark dark:text-light transition-all duration-300 group-hover:text-light/90 dark:group-hover:text-dark">
+                  <p>Our solutions have undergone extensive testing to ensure they can handle the demands of a
+                    production environment.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Features 5-->
+          <div data-aos="flip-up" data-aos-duration="1500" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class="flex-1 h-full max-w-2xl group relative cursor-pointer overflow-hidden bg-light dark:bg-dark px-6 pt-10 pb-8 shadow-large shadow-primary dark:shadow-secondary transition-all duration-300 hover:-translate-y-1 hover:bg-primary/90 dark:hover:bg-secondary/90 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+
+              <div class="relative z-10  max-w-md">
+                <div class="block gap-5">
+                  <span
+                    class="grid h-20 w-20 place-items-center mx-auto  rounded-full bg-primary dark:bg-secondary transition-all duration-300 group-hover:bg-primary-hover dark:group-hover:bg-secondary-hover">
+                    <i class="ri-arrow-up-down-line text-light dark:text-dark text-4xl"></i>
+                  </span>
+                  <p
+                    class="mt-4 mb-4 text-lg md:text-xl text-center text-dark dark:text-light font-semibold group-hover:text-light/90 dark:group-hover:text-dark transition-all duration-500">
+                    Highly Customizable</p>
+                </div>
+                <div
+                  class="space-y-6 text-center text-base md:text-lg leading-7 text-dark dark:text-light transition-all duration-300 group-hover:text-light/90 dark:group-hover:text-dark">
+                  <p>Our product is designed to adapt to your specific requirements.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Features 6-->
+          <div data-aos="flip-up" data-aos-duration="1600" data-aos-easing="ease-in-out-back" data-aos-delay="50">
+            <div
+              class="flex-1 h-full max-w-2xl group relative cursor-pointer overflow-hidden bg-light dark:bg-dark px-6 pt-10 pb-8 shadow-large shadow-primary dark:shadow-secondary transition-all duration-300 hover:-translate-y-1 hover:bg-primary/90 dark:hover:bg-secondary/90 hover:shadow-extra-large hover:shadow-primary dark:hover:shadow-secondary sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+              <div class="relative z-10  max-w-md">
+                <div class="block gap-5">
+                  <span
+                    class="grid h-20 w-20 place-items-center mx-auto  rounded-full bg-primary dark:bg-secondary transition-all duration-300 group-hover:bg-primary-hover dark:group-hover:bg-secondary-hover">
+                    <i class="ri-git-pull-request-line text-light dark:text-dark text-4xl"></i>
+                  </span>
+                  <p
+                    class="mt-4 mb-4 text-lg md:text-xl text-center text-dark dark:text-light font-semibold group-hover:text-light/90 dark:group-hover:text-dark transition-all duration-500">
+                    High Performance</p>
+                </div>
+                <div
+                  class="space-y-6 text-center text-base md:text-lg leading-7 text-dark dark:text-light transition-all duration-300 group-hover:text-light/90 dark:group-hover:text-dark">
+                  <p>We understand that your requirements are unique. Our high-performance solutions are customizable to
+                    match your specific goals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end features section-->
+
+    <!-- Footer -->
+    <footer class="shadow-extra-large shadow-primary dark:shadow-secondary">
+      <!-- Container for footer content -->
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div class="lg:grid lg:grid-cols-2">
+              <!-- Left section -->
+              <div class="py-8 lg:order-last lg:border-b-0 lg:border-s border-light dark:border-dark lg:py-16 lg:ps-16">
+                  <!-- Logo (Mobile only) -->
+                  <div class="mt-8 space-y-4 lg:mt-0">
+                      <div class="block  lg:hidden">
+                          <a href="#">
+                              <img src="./images/logo.png" alt="Logo" class="h-28 w-auto">
+                          </a>
+                      </div>
+                      <div>
+                          <h2 class="text-2xl font-medium text-primary dark:text-secondary">
+                              Discover <span class="text-dark dark:text-light">the Best Solutions</span>
+                          </h2>
+                          <p class="mt-4 max-w-lg text-dark dark:text-muted">
+                              At Visionix, we are dedicated to delivering innovative and reliable solutions
+                              tailored to your needs. Contact us for more information or schedule a consultation
+                              to elevate your brand with cutting-edge technology.
+                          </p>
+                      </div>
+                      <!-- Social Media Links -->
+                      <div class="mt-6 flex gap-4">
+                          <a href="#" class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                              <i class="ri-facebook-fill"></i>
+                          </a>
+                          <a href="#" class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                              <i class="ri-instagram-fill"></i>
+                          </a>
+                          <a href="#" class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                              <i class="ri-twitter-fill"></i>
+                          </a>
+                          <a href="#" class="text-dark dark:text-muted transition hover:text-primary dark:hover:text-secondary text-2xl">
+                              <i class="ri-youtube-fill"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Right section-->
+              <div class="py-8 lg:py-16 lg:pe-16">
+                  <div class="hidden lg:text-3xl font-semibold radio-canada-regular lg:block">
+                      <a href="#">
+                          <img src="./images/logo.png" alt="Logo" class="h-28 w-auto">
+                      </a>
+                  </div>
+                  <!-- Links section -->
+                  <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
+                      <div>
+                          <p class="font-medium text-primary dark:text-secondary">Legal & Press</p>
+                          <ul class="mt-6 space-y-4 text-sm">
+                              <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Privacy Policy</a></li>
+                              <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Presskit</a></li>
+                              <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Terms & Conditions</a></li>
+                          </ul>
+                      </div>
+                      <div>
+                          <p class="font-medium text-primary dark:text-secondary">Company</p>
+                          <ul class="mt-6 space-y-4 text-sm">
+                              <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">About</a></li>
+                              <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Services</a></li>
+                              <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Portfolio</a></li>
+                              <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Blog</a></li>
+                              <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Contact</a></li>
+                          </ul>
+                      </div>
+                      <div>
+                          <p class="font-medium text-primary dark:text-secondary">Helpful Links</p>
+                          <ul class="mt-6 space-y-4 text-sm">
+                              <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Contact</a></li>
+                              <li><a href="#" class="text-dark dark:text-muted transition hover:opacity-75">Documentation</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <!-- Footer bottom: Terms and copyright -->
+                  <div class="mt-8 border-t border-light dark:border-dark pt-8">
+                      <ul class="flex flex-wrap gap-4 text-lg">
+                          <li><a href="#" class="text-darkmuted dark:text-light transition hover:opacity-75">Terms & Conditions</a></li>
+                          <li><a href="#" class="text-darkmuted dark:text-light transition hover:opacity-75">Privacy Policy</a></li>
+                          <li><a href="#" class="text-darkmuted dark:text-light transition hover:opacity-75">Cookies</a></li>
+                      </ul>
+                      <p class="mt-8 text-lgs text-darkmuted dark:text-light">&copy; 2025 Visionix. All rights reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- End Footer -->
+  </main>
+  <!--main custom js-->
+  <script src="./js/main.js"></script>
+
+  <!--flowbite js-->
+  <script src="./js/flowbite.min.js"></script>
+  <!--aos js-->
+  <script src="./js/aos.js"></script>
+
+  <script>
+    // aos scirpt init
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
